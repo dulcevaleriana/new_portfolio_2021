@@ -1,5 +1,5 @@
 .class-animacion-1{
-    animation: animate-animacion-1 0.5s steps(4) infinite;
+    animation: animate-animacion-1 0.8s steps(8) infinite;
 }
 
 @keyframes animate-animacion-1 {
@@ -7,6 +7,6 @@
         background-position: 0px;
     }
     100%{
-        background-position: 1503px;
+        background-position: 3021px;
     }
 }
