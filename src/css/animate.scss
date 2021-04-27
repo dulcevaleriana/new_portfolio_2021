@@ -1,0 +1,12 @@
+.class-animacion-1{
+    animation: animate-animacion-1 0.5s steps(4) infinite;
+}
+
+@keyframes animate-animacion-1 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1503px;
+    }
+}
