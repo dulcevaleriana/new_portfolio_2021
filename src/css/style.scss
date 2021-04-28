@@ -27,3 +27,11 @@ header.App-header {
     background: $image_animation_2;
     -webkit-box-reflect: $reflect-3;
 }
+
+.class-animacion-3{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_2;
+    -webkit-box-reflect: $reflect-3;
+    transform: scaleX(-1);
+}
