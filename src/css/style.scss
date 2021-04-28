@@ -1,14 +1,29 @@
 @import './animate.scss';
 @import './variable.scss';
 
+/*NOTA: ESTO ES UNA PRUEBA, QUITAR ESTA CLASE DESPUES*/
+header.App-header {
+    display: flex;
+    flex-direction: initial;
+}
+
 .class-animacion-0{
     height: 647px;
     width: 377.6px;
     background: $image_animation_0;
+    -webkit-box-reflect: $reflect;
 }
 
 .class-animacion-1{
     height: 647px;
     width: 377.6px;
     background: $image_animation_1;
+    -webkit-box-reflect: $reflect-2;
+}
+
+.class-animacion-2{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_2;
+    -webkit-box-reflect: $reflect-3;
 }

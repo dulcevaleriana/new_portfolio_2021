@@ -5,9 +5,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Prueba animacion caminando de frente */}
+        {/* Prueba animacion */}
         <div className="class-animacion-0"/>
         <div className="class-animacion-1"/>
+        <div className="class-animacion-2"/>
       </header>
     </div>
   );

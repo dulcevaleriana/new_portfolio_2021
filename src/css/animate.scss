@@ -10,3 +10,16 @@
         background-position: 3021px;
     }
 }
+
+.class-animacion-2{
+    animation: animate-animacion-2 0.8s steps(8) infinite reverse;
+}
+
+@keyframes animate-animacion-2 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 2974px;
+    }
+}
