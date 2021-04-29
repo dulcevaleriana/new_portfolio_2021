@@ -3,9 +3,10 @@
 
 /*NOTA: ESTO ES UNA PRUEBA, QUITAR ESTA CLASE DESPUES*/
 header.App-header {
-    display: flex;
-    flex-direction: initial;
-    background-color: #f2b705;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    background-color: $color-yellow;
+    grid-gap: 500px 0;
 }
 
 .class-animacion-0{
@@ -33,6 +34,14 @@ header.App-header {
     height: 647px;
     width: 377.6px;
     background: $image_animation_2;
+    -webkit-box-reflect: $reflect-3;
+    transform: scaleX(-1);
+}
+
+.class-animacion-4{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_4;
     -webkit-box-reflect: $reflect-3;
     transform: scaleX(-1);
 }

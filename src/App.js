@@ -6,10 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Prueba animacion */}
-        <div className="class-animacion-0"/>
+        <div className="class-animacion-4"/>
         <div className="class-animacion-1"/>
         <div className="class-animacion-2"/>
         <div className="class-animacion-3"/>
+        <div className="class-animacion-0"/>
       </header>
     </div>
   );

@@ -4,12 +4,12 @@
 
 @keyframes animate-animacion-1 {
     0%{
-        background-position: 0px;
+        background-position: 0;
     }
     100%{
         background-position: 3021px;
     }
-}
+} 
 
 .class-animacion-2,
 .class-animacion-3{
@@ -24,3 +24,16 @@
         background-position: 2974px;
     }
 }
+
+.class-animacion-4{
+    animation: animate-animacion-4 0.8s steps(8) infinite ;
+}
+
+@keyframes animate-animacion-4 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 3020px;
+    }
+} 
