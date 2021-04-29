@@ -12,6 +12,9 @@ function App() {
         <div className="class-animacion-3"/>
         <div className="class-animacion-0"/>
       </header>
+      <div>
+        <div className="class-animacion-5"/>
+      </div>
     </div>
   );
 }

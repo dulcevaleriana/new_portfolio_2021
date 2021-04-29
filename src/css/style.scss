@@ -2,11 +2,16 @@
 @import './variable.scss';
 
 /*NOTA: ESTO ES UNA PRUEBA, QUITAR ESTA CLASE DESPUES*/
+
+.App{
+    background-color: $color-yellow;
+}
+
 header.App-header {
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw;
-    background-color: $color-yellow;
     grid-gap: 500px 0;
+    background-color: $color-yellow;
 }
 
 .class-animacion-0{
@@ -44,4 +49,12 @@ header.App-header {
     background: $image_animation_4;
     -webkit-box-reflect: $reflect-3;
     transform: scaleX(-1);
+}
+
+.class-animacion-5{
+    height: 647px;
+    width: 913px;
+    background: $image_animation_5;
+    -webkit-box-reflect: $reflect-3;
+    //transform: scaleX(-1);
 }

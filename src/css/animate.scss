@@ -37,3 +37,16 @@
         background-position: 3020px;
     }
 } 
+
+.class-animacion-5{
+    animation: animate-animacion-5 0.8s steps(11) infinite;
+}
+
+@keyframes animate-animacion-5 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 10115px;
+    }
+} 
