@@ -64,4 +64,32 @@
     100%{
         background-position: 5538px;
     }
-} 
+}
+
+.class-animacion-8{
+    animation: animate-animacion-8 0.4s steps(4) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-8 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 2249px;
+    }
+}
+
+.class-animacion-9{
+    animation: animate-animacion-9 0.4s steps(6) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-9 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 3380px;
+    }
+}
