@@ -14,7 +14,7 @@ function App() {
       <div>
         <div className="class-animacion-0"/>
         <div className="class-animacion-5"/>
-        <div className="class-animacion-5"/>
+        <div className="class-animacion-7"/>
       </div>
     </div>
   );
