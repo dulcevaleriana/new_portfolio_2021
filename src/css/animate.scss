@@ -39,12 +39,13 @@
 } 
 
 .class-animacion-5{
-    animation: animate-animacion-5 0.8s steps(11) infinite;
+    animation: animate-animacion-5 0.9s steps(10) reverse infinite;
+    animation-fill-mode: backwards;
 }
 
 @keyframes animate-animacion-5 {
     0%{
-        background-position: 0;
+        background-position: 931.747px;
     }
     100%{
         background-position: 10115px;

@@ -10,9 +10,10 @@ function App() {
         <div className="class-animacion-1"/>
         <div className="class-animacion-2"/>
         <div className="class-animacion-3"/>
-        <div className="class-animacion-0"/>
       </header>
       <div>
+        <div className="class-animacion-0"/>
+        <div className="class-animacion-5"/>
         <div className="class-animacion-5"/>
       </div>
     </div>
