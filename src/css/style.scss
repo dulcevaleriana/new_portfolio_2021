@@ -1,91 +1,130 @@
-@import './animate.scss';
 @import './variable.scss';
+@import './animate.scss';
+@import './animation.scss';
 
-/*NOTA: ESTO ES UNA PRUEBA, QUITAR ESTA CLASE DESPUES*/
-
-.App{
-    background-color: $color-yellow;
+/*Inicio*/
+*{
+    font-family: 'Roboto';
+    color: $color-pupple;
+}
+body {
+    background: $gradient-yellow;
+    overflow-y: hidden;
 }
 
-header.App-header {
+.class-menu {
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw;
-    grid-gap: 500px 0;
-    background-color: $color-yellow;
+    grid-template-columns: 42vw 42vw;
+    padding: 2vh 8vw;
+    height: 8vh;
 }
 
-.App > div:nth-child(2){
+.class-menu img{
+    height: 50px;
+    width: auto;
+}
+
+.class-menu ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 0;
+    width: 100%;
+}
+
+.class-menu ul li {
+    list-style: none;
+}
+
+.class-menu ul li a {
+    text-decoration: none;
+}
+
+.class-home > div:first-child{
+    position: fixed;
+    background: $color-yellow;
+    top: 0;
+    bottom: 50vh;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.class-home {
+    height: 88vh;
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 42vw 42vw;
+    padding: 0 8vw;
 }
 
-/*Prueba Animacion*/
-
-.class-animacion-0{
-    height: 647px;
-    width: 377.6px;
-    background: $image_animation_0;
-    -webkit-box-reflect: $reflect;
+.class-home > div:nth-child(3){
+    position: relative;
+    height: 100%;
 }
 
-.class-animacion-1{
-    height: 647px;
-    width: 377.6px;
-    background: $image_animation_1;
-    -webkit-box-reflect: $reflect-2;
+.class-home > div:nth-child(3) > img:first-child{
+    position: absolute;
+    z-index: 9;
+    left: 250px;
+    bottom: 40px;
+    max-width: 330px;
+    width: 60%;
+    -webkit-box-reflect: $reflect-4;
 }
 
-.class-animacion-2{
-    height: 647px;
-    width: 377.6px;
-    background: $image_animation_2;
-    -webkit-box-reflect: $reflect-3;
+.class-home > div:nth-child(3) > img:nth-child(2){
+    position: absolute;
+    left: 0;
+    max-width: 400px;
+    width: 70%;
+    bottom: 150px;
+    -webkit-box-reflect: $reflect-5;
 }
 
-.class-animacion-3{
-    height: 647px;
-    width: 377.6px;
-    background: $image_animation_2;
-    -webkit-box-reflect: $reflect-3;
-    transform: scaleX(-1);
+.class-home > div:nth-child(3) > img:nth-child(3){
+    position: absolute;
+    bottom: 150px;
+    width: 30%;
+    max-width: 150px;
+    right: 0px;
+    -webkit-box-reflect: $reflect-5;
 }
 
-.class-animacion-4{
-    height: 647px;
-    width: 377.6px;
-    background: $image_animation_4;
-    -webkit-box-reflect: $reflect-3;
-    transform: scaleX(-1);
+.class-home > div:nth-child(2) strong {
+    font-family: Signatria;
+    font-size: 70pt;
+    color: $color-pupple;
+    font-weight: lighter;
 }
 
-.class-animacion-5{
-    height: 647px;
-    width: 932px;
-    background: $image_animation_5;
-    -webkit-box-reflect: $reflect-3;
-    background-position: 932px;
+.class-home > div:nth-child(2) h1 {
+    font-size: 50pt;
+    line-height: 0.5em;
+    -webkit-box-reflect: $reflect-6;
 }
 
-.class-animacion-7{
-    height: 647px;
-    width: 932px;
-    background: $image_animation_7;
-    -webkit-box-reflect: $reflect-3;
-    background-position: 932px;
+.class-home > div:nth-child(2) h2{
+    line-height: 0;
 }
 
-.class-animacion-8{
-    height: 647px;
-    width: 569px;
-    background: $image_animation_8;
-    -webkit-box-reflect: $reflect-3;
-    background-position: 569px;
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0;
+    background: transparent;
+    border: 2px solid $color-pupple;
+    font-weight: bolder;
+    font-size: 12pt;
 }
 
-.class-animacion-9{
-    height: 647px;
-    width: 569px;
-    background: $image_animation_9;
-    -webkit-box-reflect: $reflect-3;
-    background-position: 569px;
+.class-home > div:nth-child(2) button{
+    margin-top: 100px;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.class-menu ul li:first-child{
+    display: none;
 }

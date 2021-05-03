@@ -10,6 +10,7 @@ import Menu from './component/menu';
 import './App.css';
 import './css/style.scss';
 
+import Home from './view/home';
 import Portfolio from './view/portfolio';
 import AboutUs from './view/aboutUs';
 import Contact from './view/contact';
@@ -18,6 +19,11 @@ import Contact from './view/contact';
 const menuList = [
   {
     link:'/',
+    name:'Home',
+    page:<Home/>
+  },
+  {
+    link:'/Portfolio',
     name:'Portfolio',
     page:<Portfolio/>
   },
