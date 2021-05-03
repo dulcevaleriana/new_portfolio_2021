@@ -1,0 +1,91 @@
+@import './animate.scss';
+@import './variable.scss';
+
+/*NOTA: ESTO ES UNA PRUEBA, QUITAR ESTA CLASE DESPUES*/
+
+.App{
+    background-color: $color-yellow;
+}
+
+header.App-header {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    grid-gap: 500px 0;
+    background-color: $color-yellow;
+}
+
+.App > div:nth-child(2){
+    display: grid;
+    grid-template-columns: 25% auto;
+}
+
+/*Prueba Animacion*/
+
+.class-animacion-0{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_0;
+    -webkit-box-reflect: $reflect;
+}
+
+.class-animacion-1{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_1;
+    -webkit-box-reflect: $reflect-2;
+}
+
+.class-animacion-2{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_2;
+    -webkit-box-reflect: $reflect-3;
+}
+
+.class-animacion-3{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_2;
+    -webkit-box-reflect: $reflect-3;
+    transform: scaleX(-1);
+}
+
+.class-animacion-4{
+    height: 647px;
+    width: 377.6px;
+    background: $image_animation_4;
+    -webkit-box-reflect: $reflect-3;
+    transform: scaleX(-1);
+}
+
+.class-animacion-5{
+    height: 647px;
+    width: 932px;
+    background: $image_animation_5;
+    -webkit-box-reflect: $reflect-3;
+    background-position: 932px;
+}
+
+.class-animacion-7{
+    height: 647px;
+    width: 932px;
+    background: $image_animation_7;
+    -webkit-box-reflect: $reflect-3;
+    background-position: 932px;
+}
+
+.class-animacion-8{
+    height: 647px;
+    width: 569px;
+    background: $image_animation_8;
+    -webkit-box-reflect: $reflect-3;
+    background-position: 569px;
+}
+
+.class-animacion-9{
+    height: 647px;
+    width: 569px;
+    background: $image_animation_9;
+    -webkit-box-reflect: $reflect-3;
+    background-position: 569px;
+}

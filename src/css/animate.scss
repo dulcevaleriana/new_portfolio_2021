@@ -1,0 +1,95 @@
+.class-animacion-1{
+    animation: animate-animacion-1 0.8s steps(8) infinite reverse;
+}
+
+@keyframes animate-animacion-1 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 3021px;
+    }
+} 
+
+.class-animacion-2,
+.class-animacion-3{
+    animation: animate-animacion-2 0.8s steps(8) infinite reverse;
+}
+
+@keyframes animate-animacion-2 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 2974px;
+    }
+}
+
+.class-animacion-4{
+    animation: animate-animacion-4 0.8s steps(8) infinite ;
+}
+
+@keyframes animate-animacion-4 {
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 3020px;
+    }
+} 
+
+.class-animacion-5{
+    animation: animate-animacion-5 0.9s steps(10) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-5 {
+    0%{
+        background-position: 931.747px;
+    }
+    100%{
+        background-position: 10115px;
+    }
+} 
+
+.class-animacion-7{
+    animation: animate-animacion-7 0.4s steps(5) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-7 {
+    0%{
+        background-position: 931.747px;
+    }
+    100%{
+        background-position: 5538px;
+    }
+}
+
+.class-animacion-8{
+    animation: animate-animacion-8 0.4s steps(4) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-8 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 2249px;
+    }
+}
+
+.class-animacion-9{
+    animation: animate-animacion-9 0.4s steps(6) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-9 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 3380px;
+    }
+}
