@@ -13,5 +13,11 @@ $reflect : below -144px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0
 $reflect-2 :below -157px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 $reflect-3 :below -133px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
 
+$reflect-4: below -125px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+$reflect-5: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
 /*color*/
 $color-yellow : #f2b705;
+
+/*gradient*/
+
+$gradient-yellow : linear-gradient(to bottom, #f29304 50%, #fbca01 100%);
