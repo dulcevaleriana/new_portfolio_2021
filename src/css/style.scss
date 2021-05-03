@@ -120,3 +120,11 @@ button {
 .class-home > div:nth-child(2) button{
     margin-top: 100px;
 }
+
+.active{
+    font-weight: bold;
+}
+
+.class-menu ul li:first-child{
+    display: none;
+}
