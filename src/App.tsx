@@ -5,27 +5,31 @@ import {
   Route
 } from "react-router-dom";
 
-import Menu from './component/nemu';
+import Menu from './component/menu';
 
 import './App.css';
 import './css/style.scss';
 
-import Animate from './component/animate';
+import Portfolio from './view/portfolio';
+import AboutUs from './view/aboutUs';
+import Contact from './view/contact';
+
+//import Animate from './component/animate';
 const menuList = [
   {
     link:'/',
     name:'Portfolio',
-    page:<Animate/>
+    page:<Portfolio/>
   },
   {
     link:'/aboutUs',
     name:'About Us',
-    page:'lala'
+    page:<AboutUs/>
   },
   {
     link:'/contact',
     name:'Contact',
-    page:'lolo'
+    page:<Contact/>
   }
 ];
 function App() {
