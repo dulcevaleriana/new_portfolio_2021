@@ -11,7 +11,7 @@ const home = (props:any) => {
             <div>
                 <h1>Hello</h1>
                 <h1>I'm <strong>Dulce Valeriana</strong></h1>
-                <h5>Front End / Web Developer</h5>
+                <h2>Front End / Web Developer</h2>
                 <Link to="/contact">
                     <button>
                         Contact me

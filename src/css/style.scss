@@ -3,6 +3,10 @@
 @import './animation.scss';
 
 /*Inicio*/
+*{
+    font-family: 'Roboto';
+    color: $color-pupple;
+}
 body {
     background: $gradient-yellow;
     overflow-y: hidden;
@@ -10,8 +14,8 @@ body {
 
 .class-menu {
     display: grid;
-    grid-template-columns: 46vw 48vw;
-    padding: 2vh 2vw;
+    grid-template-columns: 42vw 42vw;
+    padding: 2vh 8vw;
     height: 8vh;
 }
 
@@ -49,8 +53,8 @@ body {
 .class-home {
     height: 88vh;
     display: grid;
-    grid-template-columns: 46vw 48vw;
-    padding: 0 2vw;
+    grid-template-columns: 42vw 42vw;
+    padding: 0 8vw;
 }
 
 .class-home > div:nth-child(3){
@@ -61,7 +65,7 @@ body {
 .class-home > div:nth-child(3) > img:first-child{
     position: absolute;
     z-index: 9;
-    left: 296px;
+    left: 250px;
     bottom: 40px;
     max-width: 330px;
     width: 60%;
@@ -70,7 +74,7 @@ body {
 
 .class-home > div:nth-child(3) > img:nth-child(2){
     position: absolute;
-    left: 90px;
+    left: 0;
     max-width: 400px;
     width: 70%;
     bottom: 150px;
@@ -84,4 +88,31 @@ body {
     max-width: 150px;
     right: 0px;
     -webkit-box-reflect: $reflect-5;
+}
+
+.class-home > div:nth-child(2) strong {
+    font-family: Signatria;
+    font-size: 70pt;
+    color: $color-pupple;
+    font-weight: lighter;
+}
+
+.class-home > div:nth-child(2) h1 {
+    font-size: 50pt;
+    line-height: 0.5em;
+    -webkit-box-reflect: $reflect-6;
+}
+
+.class-home > div:nth-child(2) h2{
+    line-height: 0;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    margin: 20px 0;
+    background: transparent;
+    border: 2px solid $color-pupple;
+    font-weight: bolder;
+    font-size: 12pt;
 }
