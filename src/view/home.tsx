@@ -1,8 +1,5 @@
 import {Link} from "react-router-dom";
-
-// import PERSON from '../image/animacion-frame-02.png';
 import MESA from '../image/mesa.svg';
-// import SILLA from '../image/silla.svg';
 
 const home = (props:any) => {
     return(
@@ -20,9 +17,7 @@ const home = (props:any) => {
             </div>
             <div>
                 <div className="class-person-up"/>
-                {/* <img src={PERSON} alt="PERSON"/> */}
                 <img src={MESA} alt="MESA"/>
-                {/* <img src={SILLA} alt="SILLA"/> */}
             </div>
         </div>
     )

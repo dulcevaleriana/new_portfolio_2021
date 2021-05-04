@@ -155,3 +155,29 @@ button {
     right: -150px;
     z-index: -1;
 }
+
+.class-portfolio > div:nth-child(2){
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50px calc(100% - 70px);
+    grid-gap: 20px;
+    grid-template-rows: 50px auto;
+}
+
+.class-portfolio > div:nth-child(2) > div:first-child{
+    display: grid;
+    grid-area: 1 / span 3;
+}
+
+.class-portfolio > div:nth-child(2) > div:nth-child(2) > div{
+    width: 25px;
+    height: 25px;
+    background: #2703a6;
+    border-radius: 1000px;
+    margin: 12.2px 0;
+}
+
+.class-portfolio > div:nth-child(2) > div:first-child p,
+.class-portfolio > div:nth-child(2) > div:first-child h2{
+    line-height: 0;
+}
