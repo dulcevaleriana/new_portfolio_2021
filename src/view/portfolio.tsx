@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 
+import MyPortfolioEvolution from '../component/MyPortfolioEvolution';
+import GreenCard from '../component/GreenCard';
+import Unicef from '../component/Unicef';
+
 import MESA from '../image/mesa.svg';
 import IMG1 from '../image/Web1920–6.png';
 import IMG2 from '../image/Web1920–2.png';
@@ -12,6 +16,8 @@ import IMG8 from '../image/Image2.png';
 import IMG9 from '../image/Image1.png';
 
 const Portfolio = (props:any) => {
+    const [menuBase, setMenuBase] = useState(true);
+
     const [viewPage1, setPage1] = useState(true);
     const [viewPage2, setPage2] = useState(false);
     const [viewPage3, setPage3] = useState(false);
@@ -41,7 +47,23 @@ const Portfolio = (props:any) => {
             <div></div>
             <div>
                 <div>
-                    <p>Portfolio</p>
+                    {menuBase ? (
+                        <p>Portfolio</p>
+                    ):
+                    (
+                        <>
+                        {viewPage1 &&
+                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> My Portfolio Evolution</p>
+                        }
+                        {viewPage2 &&
+                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> Green Card</p>
+                        }
+                        {viewPage3 &&
+                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> Unicef</p>
+                        }
+                        </>
+                    )}
+                    
                     {viewPage1 &&
                     <h2>My Portfolio Evolution</h2>
                     }
@@ -52,37 +74,93 @@ const Portfolio = (props:any) => {
                     <h2>Unicef</h2>
                     }
                 </div>
+                {menuBase ? (
+                    <>
                 <div>
                     <div className={`${viewPage1 ? ClassElementActive : ""}`} onClick={() => selectThis1()}/>
                     <div className={`${viewPage2 ? ClassElementActive : ""}`} onClick={() => selectThis2()}/>
                     <div className={`${viewPage3 ? ClassElementActive : ""}`} onClick={() => selectThis3()}/>
                 </div>
                 {viewPage1 &&
-                <div>
+                <div onClick={() => setMenuBase(false)}>
                     <img src={IMG9} alt="IMG1"/>
                     <img src={IMG8} alt="IMG1"/>
                     <img src={IMG7} alt="IMG1"/>
                 </div>
                 }
                 {viewPage2 &&
-                <div>
+                <div onClick={() => setMenuBase(false)}>
                     <img src={IMG6} alt="IMG1"/>
                     <img src={IMG5} alt="IMG1"/>
                     <img src={IMG4} alt="IMG1"/>
                 </div>
                 }
                 {viewPage3 &&
-                <div>
+                <div onClick={() => setMenuBase(false)}>
                     <img src={IMG1} alt="IMG1"/>
                     <img src={IMG2} alt="IMG1"/>
                     <img src={IMG3} alt="IMG1"/>
                 </div>
                 }
+                    </>
+                )
+                :
+                (
+                    <div className="class-PortfolioDetails">
+                        {viewPage1 &&
+                            <MyPortfolioEvolution/>
+                        }
+                        {viewPage2 &&
+                            <GreenCard/>
+                        }
+                        {viewPage3 &&
+                            <Unicef/>
+                        }
+                    </div>
+                )}
+
             </div>
-            <div>
-                <div className="class-aperson-sit"/>
-                <img src={MESA} alt="MESA"/>
-            </div>
+            {menuBase ? (
+                <div>
+                    <div className="class-aperson-sit"/>
+                    <img src={MESA} alt="MESA"/>
+                </div>
+            ) :
+            (
+                <>
+                { viewPage1 &&
+                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
+                        <button>
+                            Ver en GitHub
+                        </button>
+                        <button>
+                            Ver projecto
+                        </button>
+                    </div>
+                }
+                { viewPage2 &&
+                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
+                        <button>
+                            Ver en GitHub
+                        </button>
+                        <button>
+                            Ver projecto
+                        </button>
+                    </div>
+                }
+                { viewPage3 &&
+                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
+                        <button>
+                            Ver en GitHub
+                        </button>
+                        <button>
+                            Ver projecto
+                        </button>
+                    </div>
+                }
+                </>
+            )
+            }
         </div>
     )
 }
