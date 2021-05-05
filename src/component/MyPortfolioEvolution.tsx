@@ -1,5 +1,6 @@
 import JSONMyPortfolioEvolution from '../json/MyPortfolioEvolution.json';
 import Footer from '../component/Footer';
+import NextPage from '../component/NextPage';
 
 import IMG4 from '../image/Image6.png';
 import IMG5 from '../image/Image5.png';
@@ -19,17 +20,13 @@ const MyPortfolioEvolution = (props:any) => {
                     </div>
                 </div>
             ))}
-            <div className="class-nextPage">
-                <div>
-                    <img src={IMG6} alt="IMG1"/>
-                    <img src={IMG5} alt="IMG1"/>
-                    <img src={IMG4} alt="IMG1"/>
-                </div>
-                <div>
-                    <p>Siguiente Proyecto</p>
-                    <h2 onClick={props.onClick}>Green Card </h2>
-                </div>
-            </div>
+            <NextPage
+                IMG_A={IMG4}
+                IMG_B={IMG5}
+                IMG_C={IMG6}
+                onClick={props.onClick}
+                namePage="Green Card >>"
+            />
             <Footer/>
         </div>
     )

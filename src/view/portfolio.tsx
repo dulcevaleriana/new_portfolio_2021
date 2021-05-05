@@ -111,10 +111,10 @@ const Portfolio = (props:any) => {
                             <MyPortfolioEvolution onClick={() => selectThis2()}/>
                         }
                         {viewPage2 &&
-                            <GreenCard/>
+                            <GreenCard onClick={() => selectThis3()}/>
                         }
                         {viewPage3 &&
-                            <Unicef/>
+                            <Unicef onClick={() => selectThis1()}/>
                         }
                     </div>
                 )}
