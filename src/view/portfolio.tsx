@@ -77,9 +77,9 @@ const Portfolio = (props:any) => {
                 {menuBase ? (
                     <>
                 <div>
-                    <div className={`${viewPage1 ? ClassElementActive : ""}`} onClick={() => selectThis1()}/>
-                    <div className={`${viewPage2 ? ClassElementActive : ""}`} onClick={() => selectThis2()}/>
-                    <div className={`${viewPage3 ? ClassElementActive : ""}`} onClick={() => selectThis3()}/>
+                    <div className={`${viewPage1 ? ClassElementActive : ""} class-button-dropdown`} onClick={() => selectThis1()}/>
+                    <div className={`${viewPage2 ? ClassElementActive : ""} class-button-dropdown`} onClick={() => selectThis2()}/>
+                    <div className={`${viewPage3 ? ClassElementActive : ""} class-button-dropdown`} onClick={() => selectThis3()}/>
                 </div>
                 {viewPage1 &&
                 <div onClick={() => setMenuBase(false)}>
@@ -108,7 +108,7 @@ const Portfolio = (props:any) => {
                 (
                     <div className="class-PortfolioDetails">
                         {viewPage1 &&
-                            <MyPortfolioEvolution/>
+                            <MyPortfolioEvolution onClick={() => selectThis2()}/>
                         }
                         {viewPage2 &&
                             <GreenCard/>

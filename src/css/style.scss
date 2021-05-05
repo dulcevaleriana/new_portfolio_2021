@@ -169,7 +169,7 @@ button {
     grid-area: 1 / span 3;
 }
 
-.class-portfolio > div:nth-child(2) > div:nth-child(2) > div{
+.class-button-dropdown{
     width: 25px;
     height: 25px;
     background: $color-pupple;
@@ -227,9 +227,49 @@ button {
     display: flex;
     flex-direction: row-reverse;
     gap: 20px;
-    height: 50px;
+    height: 50px !important;
 }
 
 .class-flex-button-portfolio-detail button{
     margin: 10px 0 !important;
+}
+
+.class-MyPortfolioEvolution > div {
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-gap: 20px;
+}
+
+.class-MyPortfolioEvolution > div > h2 {
+    display: grid;
+    grid-column: 1 / span 2;
+    margin: 0 !important;
+}
+
+.class-MyPortfolioEvolution > div > div:nth-child(3n+0){
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    max-height: 268px;
+}
+
+.class-nextPage {
+    position: absolute;
+    background: #f2b705;
+    left: 0;
+    right: 0;
+    align-items: center;
+    margin: 20px 0;
+    grid-template-columns: calc(60% - 10px) calc(40% - 10px) !important;
+}
+
+.class-nextPage > div:first-child{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 50%;
+}
+
+.class-nextPage > div:first-child img{
+    width: auto;
+    height: 200px;
 }
