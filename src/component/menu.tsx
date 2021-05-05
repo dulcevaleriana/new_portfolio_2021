@@ -1,7 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 
-import LOGO from '../image/icon-logo.svg'
+import LOGO from '../image/icon-logo.svg';
 
 const menu = (props:any) => {
     const menuList = props.menuList;
