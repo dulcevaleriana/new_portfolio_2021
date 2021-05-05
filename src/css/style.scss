@@ -6,7 +6,32 @@
 *{
     font-family: 'Roboto';
     color: $color-pupple;
+    scrollbar-color: $color-white $color-pupple;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $color-pupple;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $color-white;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: $color-yellow;
+}
+
 body {
     background: $gradient-yellow;
     overflow: hidden;
@@ -25,7 +50,8 @@ body {
     width: auto;
 }
 
-.class-menu ul {
+.class-menu ul,
+.class-Footer ul {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
@@ -33,11 +59,13 @@ body {
     width: 100%;
 }
 
-.class-menu ul li {
+.class-menu ul li,
+.class-Footer ul li {
     list-style: none;
 }
 
-.class-menu ul li a {
+.class-menu ul li a,
+.class-Footer ul li a{
     text-decoration: none;
 }
 
@@ -248,19 +276,19 @@ button {
 
 .class-MyPortfolioEvolution > div > div:nth-child(3n+0){
     display: flex;
-    width: 100%;
+    width: 103%;
     overflow-x: auto;
     max-height: 268px;
 }
 
 .class-nextPage {
-    position: absolute;
-    background: #f2b705;
-    left: 0;
-    right: 0;
+    position: relative;
+    background: $color-yellow;
     align-items: center;
     margin: 20px 0;
     grid-template-columns: calc(60% - 10px) calc(40% - 10px) !important;
+    margin-left: -8vw !important;
+    margin-right: -8vw !important;
 }
 
 .class-nextPage > div:first-child{
@@ -272,4 +300,56 @@ button {
 .class-nextPage > div:first-child img{
     width: auto;
     height: 200px;
+    top: 50px;
+    position: relative;
+}
+
+.class-Footer {
+    width: 50%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-gap: 8px !important;
+    grid-template-columns: 100% !important;
+}
+
+.class-Footer > div:first-child {
+    display: grid;
+    grid-template-columns: 80px auto;
+    grid-gap: 10px;
+}
+
+.class-Footer > div:first-child > img{
+    width: 100%;
+}
+
+.class-Footer > div:first-child > strong {
+    font-family: Signatria;
+    font-size: 40pt;
+    color: #2703a6;
+    font-weight: lighter;
+}
+.class-portfolio > div:nth-child(2) > div:first-child p > strong , 
+.class-portfolio > div:nth-child(2) > div:first-child h2 > strong {
+    font-family: Signatria;
+    font-size: 30pt;
+    color: #2703a6;
+    font-weight: lighter;
+}
+
+.class-Footer ul {
+    justify-content:flex-start !important;
+}
+
+.class-Footer > div:nth-child(3){
+    grid-gap: 10px;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #2703a6;
+}
+
+.class-Footer p {
+    margin: 0;
 }

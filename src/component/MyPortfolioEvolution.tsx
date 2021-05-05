@@ -1,4 +1,5 @@
 import JSONMyPortfolioEvolution from '../json/MyPortfolioEvolution.json';
+import Footer from '../component/Footer';
 
 import IMG4 from '../image/Image6.png';
 import IMG5 from '../image/Image5.png';
@@ -29,9 +30,7 @@ const MyPortfolioEvolution = (props:any) => {
                     <h2 onClick={props.onClick}>Green Card </h2>
                 </div>
             </div>
-            <div >
-
-            </div>
+            <Footer/>
         </div>
     )
 }

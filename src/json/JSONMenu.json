@@ -1,0 +1,20 @@
+{
+    "menuList": [
+        {
+          "link":"/",
+          "name":"Home"
+        },
+        {
+          "link":"/Portfolio",
+          "name":"Portfolio"
+        },
+        {
+          "link":"/aboutMe",
+          "name":"About Me"
+        },
+        {
+          "link":"/contact",
+          "name":"Contact"
+        }
+      ]
+}
