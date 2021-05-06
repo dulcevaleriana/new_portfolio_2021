@@ -433,12 +433,33 @@ hr {
     width: 84vw;
     height: calc(100vh - (52.55px + 10vh));
     display: grid;
-    grid-template-columns: calc(25% - 10px) calc(75% - 10px);
+    grid-template-columns: calc(22% - 10px) calc(78% - 10px);
     grid-gap: 20px;
 }
 
-.class-aboutUs > div:nth-child(2) > div {
+.class-aboutUs > div:nth-child(2) > div:last-child {
     background: #f2f0d5cf;
     padding: 10px;
     border: 2px solid #f39405;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child{
+    padding: 10px;
+    border: 2px solid #f39405;
+    position: relative;
+    width: initial;
+    height: inherit;
+    border-radius: 0%;
+    overflow: hidden;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 0px 2000px #f2f0d5cf;
 }
