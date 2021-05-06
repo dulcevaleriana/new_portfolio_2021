@@ -1,0 +1,67 @@
+{
+    "AboutMeJSON":[
+        {
+            "myName":"Dulce Valeriana",
+            "infoAboutMe":[
+                "I am passionate about my career, improving my knowledge and being useful to my team. I aspire to be a full stark (back-end / front-end) with specializations in front-end, because that is where my tastes flow the most.",
+                "I hope to connect with many people in my area, who wish to grow and undertake with great ideas for the future."
+            ],
+            "titleExperience":"Experience",
+            "dataExperience":[
+                {
+                    "nameJob":"Front-end Developer  / Ministerio Público",
+                    "dateStart":"may. de 2019",
+                    "dateEnd":"actually",
+                    "detailJob":[
+                        "Optimize internal program views",
+                        "Create previews and endings of future internal program projects",
+                        "Structure views according to the survey and flow of the project"
+                    ]
+                },
+                {
+                    "nameJob":"Web designer / Caribe Media, Inc.",
+                    "dateStart":"oct. de 2018",
+                    "dateEnd":"may. de 2019",
+                    "detailJob":[
+                        "Design templates for web pages",
+                        "Give training to create web pages",
+                        "Design previews"
+                    ]
+                },
+                {
+                    "nameJob":"UI Designer / Wireless Latin Entertainment",
+                    "dateStart":"dic. de 2017",
+                    "dateEnd":"jul. de 2018",
+                    "detailJob":[
+                        "Creation of interfaces",
+                        "Creation of graphic lines for interfaces",
+                        "Creation of banners"
+                    ]
+                },
+                {
+                    "nameJob":"UI Designer / Edu-zone",
+                    "dateStart":"ene. de 2016",
+                    "dateEnd":"dic. de 2017",
+                    "detailJob":[
+                        "User interface design for interactive books, widgets and games."
+                    ]
+                }
+            ],
+            "titleEducation":"Education",
+            "detailEducation":[
+                "Technological Institute of the Americas (ITLA)",
+                "Multimedia Technologist",
+                "UI / UX academic discipline 2013 - 2015"
+            ],
+            "titleContact":"Contact",
+            "detailContact":[
+                "dulceguzmantaveras@gmail.com"
+            ],
+            "links":[
+                "https://www.redbubble.com/es/people/dulcevaleriana/works/",
+                "https://github.com/dulcevaleriana",
+                "https://www.linkedin.com/in/dulcevaleriana/"
+            ]
+        }
+    ]
+}

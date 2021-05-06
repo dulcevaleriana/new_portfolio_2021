@@ -80,6 +80,16 @@ body {
     z-index: -3;
 }
 
+.class-aboutUs > div:first-child {
+    background: $gradient-invert;
+    top: 50vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -3;
+}
+
 .class-home,
 .class-portfolio {
     height: 88vh;
@@ -348,7 +358,7 @@ button {
 
 .class-Footer > div:nth-child(3){
     grid-gap: 10px;
-    display: grid;
+    display: grid !important;
     grid-template-columns: 44px 44px 44px;
 }
 
@@ -377,4 +387,137 @@ hr {
 .class-GreenCard > div:nth-child(2) img,
 .class-Unicef > div:nth-child(2) img {
     width: 104%;
+}
+
+.class-aboutUs > div:nth-child(3) {
+    position: absolute;
+    left: 8vw;
+    right: 8vw;
+    top: calc(52.55px + 4vh);
+    bottom: 4vh;
+}
+
+.class-aboutUs > div:nth-child(3) > div:first-child{
+    position: relative;
+    top: -6vh;
+    left: -3vw;
+    z-index: -2;
+}
+
+.class-aboutUs > div:nth-child(3) > img:nth-child(2){
+    position: absolute;
+    right: 114px;
+    max-width: 460px;
+    width: 80%;
+    bottom: 43px;
+    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: -2;
+}
+
+.class-aboutUs > div:nth-child(3) > img:nth-child(3){
+    position: absolute;
+    right: -42px;
+    max-width: 230px;
+    width: 50%;
+    bottom: 18px;
+    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: -2;
+}
+
+.class-aboutUs > div:nth-child(2){
+    position: relative;
+    left: 8vw;
+    right: 8vw;
+    bottom: 4vh;
+    top: 0;
+    width: 84vw;
+    height: calc(100vh - (52.55px + 10vh));
+    display: grid;
+    grid-template-columns: calc(22% - 10px) calc(78% - 10px);
+    grid-gap: 20px;
+    z-index: 9;
+}
+
+.class-aboutUs > div:nth-child(2) > div:last-child {
+    background: #f2f0d5cf;
+    padding: 10px;
+    border: 2px solid #f39405;
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-gap: 20px;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child{
+    padding: 10px;
+    border: 2px solid #f39405;
+    position: relative;
+    width: initial;
+    height: inherit;
+    border-radius: 0%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child::after{
+    content: '';
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 0px 2000px #f2f0d5cf;
+    z-index: -1;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child > div {
+    position: relative;
+    top: 230px;
+    text-align: center;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+    font-family: Signatria;
+    font-size: 35pt;
+    color: #2703a6;
+    font-weight: lighter;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+    margin-top: 0;
+}
+
+.class-aboutUs > div:nth-child(2) > div:last-child > div:nth-child(2) > div:last-child {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 44px 44px 44px;
+}
+
+.class-experienceDetail {
+    display: grid;
+    grid-template-columns: 15px calc(100% - 25px);
+    grid-gap: 10px;
+}
+
+.class-experienceDetail > div:first-child{
+    width: 15px;
+    height: 15px;
+    background: #2703a6;
+    border-radius: 1000px;
+    margin: 12.2px 0;
+}
+
+.class-experienceDetail h4,
+.class-experienceDetail b,
+.class-experienceDetail p{
+    margin: 0;
+    align-self: center;
+    display: grid;
+    grid-column: 2;
+}
+
+.class-aboutUs > div:nth-child(2) > div:last-child > div{
+    padding-bottom: 20px;
 }

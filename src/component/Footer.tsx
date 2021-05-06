@@ -1,6 +1,7 @@
 import LOGO from '../image/icon-logo.svg';
 import JSONMenu from '../json/JSONMenu.json';
 import {NavLink} from "react-router-dom";
+import AboutMeJSON from '../json/AboutMeJSON.json';
 
 import SM1 from '../image/Layer2.svg';
 import SM2 from '../image/Layer-1.svg';
@@ -20,11 +21,19 @@ const Footer = () => {
                 </li>
                 )}
             </ul>
-            <div>
-                <img src={SM1} alt="SM1"/>
-                <img src={SM2} alt="SM2"/>
-                <img src={SM3} alt="SM3"/>
-            </div>
+            {AboutMeJSON.AboutMeJSON.map((props) =>
+                <div>
+                    <a target="_blank" href={props.links[0]}>
+                        <img src={SM1} alt="SM1"/>
+                    </a>
+                    <a target="_blank" href={props.links[1]}>
+                        <img src={SM3} alt="SM3"/>
+                    </a>
+                    <a target="_blank" href={props.links[2]}>
+                        <img src={SM2} alt="SM2"/>
+                    </a>
+                </div>
+            )}
             <hr/>
             <p>@2021 Dulce Valeriana Portfolio  |  Privacy Polity </p>
         </div>
