@@ -1,8 +1,7 @@
-import MESA from '../image/mesa.svg';
-import SILLA from '../image/silla.svg';
-
 import AboutMeJSON from '../json/AboutMeJSON.json'
 
+import MESA from '../image/mesa.svg';
+import SILLA from '../image/silla.svg';
 import SM1 from '../image/Layer2.svg';
 import SM2 from '../image/Layer-1.svg';
 import SM3 from '../image/Layer-2.svg';
@@ -39,9 +38,15 @@ const AboutMe = (props:any) => {
                                 <h2>Contact</h2>
                                 <p>dulceguzmantaveras@gmail.com</p>
                                 <div>
-                                    <img src={SM1} alt="SM1"/>
-                                    <img src={SM2} alt="SM2"/>
-                                    <img src={SM3} alt="SM3"/>
+                                    <a target="_blank" href={props.links[0]}>
+                                        <img src={SM1} alt="SM1"/>
+                                    </a>
+                                    <a target="_blank" href={props.links[1]}>
+                                        <img src={SM2} alt="SM2"/>
+                                    </a>
+                                    <a target="_blank" href={props.links[2]}>
+                                        <img src={SM3} alt="SM3"/>
+                                    </a>
                                 </div>
                             </div>
                         </div>
