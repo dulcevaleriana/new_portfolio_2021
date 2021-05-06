@@ -33,10 +33,8 @@ const AboutMe = (props:any) => {
                                 )}
                             </div>
                             <div>
-                                <h2>Education</h2>
-                                <p>Technological Institute of the Americas (ITLA)</p>
-                                <p>Multimedia Technologist</p>
-                                <p>UI / UX academic discipline 2013 - 2015</p>
+                                <h2>{props.titleEducation}</h2>
+                                {props.detailEducation.map((propp) => <p>{propp}</p>)}
 
                                 <h2>Contact</h2>
                                 <p>dulceguzmantaveras@gmail.com</p>

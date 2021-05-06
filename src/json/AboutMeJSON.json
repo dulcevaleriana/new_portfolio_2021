@@ -46,6 +46,16 @@
                         "User interface design for interactive books, widgets and games."
                     ]
                 }
+            ],
+            "titleEducation":"Education",
+            "detailEducation":[
+                "Technological Institute of the Americas (ITLA)",
+                "Multimedia Technologist",
+                "UI / UX academic discipline 2013 - 2015"
+            ],
+            "titleContact":"Contact",
+            "detailContact":[
+                "dulceguzmantaveras@gmail.com"
             ]
         }
     ]
