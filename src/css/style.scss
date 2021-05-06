@@ -80,6 +80,16 @@ body {
     z-index: -3;
 }
 
+.class-aboutUs > div:first-child {
+    background: $gradient-invert;
+    top: 50vh;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: -3;
+}
+
 .class-home,
 .class-portfolio {
     height: 88vh;
@@ -377,4 +387,58 @@ hr {
 .class-GreenCard > div:nth-child(2) img,
 .class-Unicef > div:nth-child(2) img {
     width: 104%;
+}
+
+.class-aboutUs > div:nth-child(3) {
+    position: absolute;
+    left: 8vw;
+    right: 8vw;
+    top: calc(52.55px + 4vh);
+    bottom: 4vh;
+}
+
+.class-aboutUs > div:nth-child(3) > div:first-child{
+    position: relative;
+    top: -6vh;
+    left: -3vw;
+    z-index: -2;
+}
+
+.class-aboutUs > div:nth-child(3) > img:nth-child(2){
+    position: absolute;
+    right: 114px;
+    max-width: 460px;
+    width: 80%;
+    bottom: 43px;
+    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: -2;
+}
+
+.class-aboutUs > div:nth-child(3) > img:nth-child(3){
+    position: absolute;
+    right: -42px;
+    max-width: 230px;
+    width: 50%;
+    bottom: 18px;
+    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    z-index: -2;
+}
+
+.class-aboutUs > div:nth-child(2){
+    position: relative;
+    left: 8vw;
+    right: 8vw;
+    bottom: 4vh;
+    top: 0;
+    width: 84vw;
+    height: calc(100vh - (52.55px + 10vh));
+    display: grid;
+    grid-template-columns: calc(25% - 10px) calc(75% - 10px);
+    grid-gap: 20px;
+}
+
+.class-aboutUs > div:nth-child(2) > div {
+    background: #f2f0d5cf;
+    padding: 10px;
+    border: 2px solid #f39405;
 }
