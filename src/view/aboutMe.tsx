@@ -1,4 +1,4 @@
-import AboutMeJSON from '../json/AboutMeJSON.json'
+import AboutMeJSON from '../json/AboutMeJSON.json';
 
 import MESA from '../image/mesa.svg';
 import SILLA from '../image/silla.svg';
@@ -42,10 +42,10 @@ const AboutMe = (props:any) => {
                                         <img src={SM1} alt="SM1"/>
                                     </a>
                                     <a target="_blank" href={props.links[1]}>
-                                        <img src={SM2} alt="SM2"/>
+                                        <img src={SM3} alt="SM3"/>
                                     </a>
                                     <a target="_blank" href={props.links[2]}>
-                                        <img src={SM3} alt="SM3"/>
+                                        <img src={SM2} alt="SM2"/>
                                     </a>
                                 </div>
                             </div>

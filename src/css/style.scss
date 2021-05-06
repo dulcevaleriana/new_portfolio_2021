@@ -358,7 +358,7 @@ button {
 
 .class-Footer > div:nth-child(3){
     grid-gap: 10px;
-    display: grid;
+    display: grid !important;
     grid-template-columns: 44px 44px 44px;
 }
 
