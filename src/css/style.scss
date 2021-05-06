@@ -435,12 +435,18 @@ hr {
     display: grid;
     grid-template-columns: calc(22% - 10px) calc(78% - 10px);
     grid-gap: 20px;
+    z-index: 9;
 }
 
 .class-aboutUs > div:nth-child(2) > div:last-child {
     background: #f2f0d5cf;
     padding: 10px;
     border: 2px solid #f39405;
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-gap: 20px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 .class-aboutUs > div:nth-child(2) > div:first-child{
@@ -451,6 +457,7 @@ hr {
     height: inherit;
     border-radius: 0%;
     overflow: hidden;
+    height: 100%;
 }
 
 .class-aboutUs > div:nth-child(2) > div:first-child::after{
@@ -462,4 +469,55 @@ hr {
     width: 180px;
     height: 180px;
     box-shadow: 0px 0px 0px 2000px #f2f0d5cf;
+    z-index: -1;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child > div {
+    position: relative;
+    top: 230px;
+    text-align: center;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+    font-family: Signatria;
+    font-size: 35pt;
+    color: #2703a6;
+    font-weight: lighter;
+}
+
+.class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+    margin-top: 0;
+}
+
+.class-aboutUs > div:nth-child(2) > div:last-child > div:nth-child(2) > div:last-child {
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 44px 44px 44px;
+}
+
+.class-experienceDetail {
+    display: grid;
+    grid-template-columns: 15px calc(100% - 25px);
+    grid-gap: 10px;
+}
+
+.class-experienceDetail > div:first-child{
+    width: 15px;
+    height: 15px;
+    background: #2703a6;
+    border-radius: 1000px;
+    margin: 12.2px 0;
+}
+
+.class-experienceDetail h4,
+.class-experienceDetail b,
+.class-experienceDetail p{
+    margin: 0;
+    align-self: center;
+    display: grid;
+    grid-column: 2;
+}
+
+.class-aboutUs > div:nth-child(2) > div:last-child > div{
+    padding-bottom: 20px;
 }

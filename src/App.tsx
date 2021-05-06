@@ -12,7 +12,7 @@ import './css/style.scss';
 
 import Home from './view/home';
 import Portfolio from './view/portfolio';
-import AboutUs from './view/aboutUs';
+import AboutMe from './view/aboutMe';
 import Contact from './view/contact';
 
 // import Animate from './component/animate';
@@ -30,7 +30,7 @@ const menuList = [
   {
     link:'/aboutMe',
     name:'About Me',
-    page:<AboutUs/>
+    page:<AboutMe/>
   },
   {
     link:'/contact',
