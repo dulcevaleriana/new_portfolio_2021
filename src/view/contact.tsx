@@ -8,11 +8,11 @@ const contact = (props:any) => {
             <div>
                 <p>Contact</p>
                 <h2>Connect whit me !</h2>
-                <input type="text" id="fname" name="fname" placeholder="name"/>
-                <input type="text" id="fname" name="fname" placeholder="name"/>
-                <input type="text" id="fname" name="fname" placeholder="name"/>
-                <textarea id="w3review" name="w3review">
-                    Write Here
+                <input type="text" id="fname" name="fname" placeholder="Name"/>
+                <input type="email" id="femail" name="femail" placeholder="Email"/>
+                <input type="text" id="fsubject" name="fsubject" placeholder="Subject"/>
+                <textarea id="fmessage" name="Message">
+                    Message
                 </textarea>
                 <Link to="/contact">
                     <button>

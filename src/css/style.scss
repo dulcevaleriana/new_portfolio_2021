@@ -11,6 +11,19 @@
     scroll-behavior: smooth;
 }
 
+::placeholder {
+    color: $color-pupple;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $color-pupple;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: $color-pupple;
+  }
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -571,4 +584,18 @@ textarea {
 
 .class-contact > div:nth-child(2) > input:nth-child(4){
     grid-column: 2;
+}
+
+.class-fixed-img-minime {
+    position: fixed;
+    right: -14px;
+    bottom: -42px;
+    border-radius: 1000px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+}
+
+.class-fixed-img-minime img {
+    width: 100%;
 }
