@@ -70,7 +70,8 @@ body {
 }
 
 .class-home > div:first-child,
-.class-portfolio > div:first-child{
+.class-portfolio > div:first-child,
+.class-contact > div:first-child{
     position: fixed;
     background: $color-yellow;
     top: 0;
@@ -91,7 +92,8 @@ body {
 }
 
 .class-home,
-.class-portfolio {
+.class-portfolio,
+.class-contact {
     height: 88vh;
     display: grid;
     grid-template-columns: 42vw 42vw;
@@ -99,12 +101,14 @@ body {
 }
 
 .class-home > div:nth-child(3),
-.class-portfolio > div:nth-child(3){
+.class-portfolio > div:nth-child(3),
+.class-contact > div:nth-child(3){
     position: relative;
     height: 100%;
 }
 
-.class-home > div:nth-child(3) > img:first-child{
+.class-home > div:nth-child(3) > img:first-child,
+.class-contact > div:nth-child(3) > img:first-child{
     position: absolute;
     z-index: 9;
     left: 250px;
@@ -115,7 +119,8 @@ body {
 }
 
 .class-home > div:nth-child(3) > img:nth-child(2),
-.class-portfolio > div:nth-child(3) > img:nth-child(2){
+.class-portfolio > div:nth-child(3) > img:nth-child(2),
+.class-contact > div:nth-child(3) > img:nth-child(2){
     position: absolute;
     left: 0;
     max-width: 500px;
@@ -520,4 +525,50 @@ hr {
 
 .class-aboutUs > div:nth-child(2) > div:last-child > div{
     padding-bottom: 20px;
+}
+
+input,
+textarea {
+    width: auto;
+    height: 50px;
+    margin: 0;
+    background: transparent;
+    border: 1px solid #2703a6;
+    font-weight: bolder;
+    font-size: 12pt;
+    color: #2703a6;
+    border-bottom: 3px solid #2703a6;
+    border-radius: 10px 10px 0 0;
+}
+
+input{
+    padding: 0 20px;
+}
+
+textarea {
+    padding: 20px;
+    height: 70%;
+}
+
+.class-contact > div:nth-child(2){
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+    grid-template-rows: 20px 30px 55px 55px 150px 55px;
+}
+
+.class-contact > div:nth-child(2) > p,
+.class-contact > div:nth-child(2) > h2,
+.class-contact > div:nth-child(2) button{
+    margin: 0 !important;
+}
+
+.class-contact > div:nth-child(2) > h2,
+.class-contact > div:nth-child(2) > textarea,
+.class-contact > div:nth-child(2) > input:nth-child(5){
+    grid-column: 1 / span 2;
+}
+
+.class-contact > div:nth-child(2) > input:nth-child(4){
+    grid-column: 2;
 }
