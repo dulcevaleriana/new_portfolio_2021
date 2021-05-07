@@ -23,13 +23,13 @@ const Footer = () => {
             </ul>
             {AboutMeJSON.AboutMeJSON.map((props) =>
                 <div>
-                    <a target="_blank" href={props.links[0]}>
+                    <a target="_blank" rel="noreferrer" href={props.links[0]}>
                         <img src={SM1} alt="SM1"/>
                     </a>
-                    <a target="_blank" href={props.links[1]}>
+                    <a target="_blank" rel="noreferrer" href={props.links[1]}>
                         <img src={SM3} alt="SM3"/>
                     </a>
-                    <a target="_blank" href={props.links[2]}>
+                    <a target="_blank" rel="noreferrer" href={props.links[2]}>
                         <img src={SM2} alt="SM2"/>
                     </a>
                 </div>

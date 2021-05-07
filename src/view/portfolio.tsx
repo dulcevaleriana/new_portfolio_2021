@@ -14,6 +14,7 @@ import IMG6 from '../image/Image4.png';
 import IMG7 from '../image/Image3.png';
 import IMG8 from '../image/Image2.png';
 import IMG9 from '../image/Image1.png';
+import MINIME from '../image/mini_me.png';
 
 const Portfolio = (props:any) => {
     const [menuBase, setMenuBase] = useState(true);
@@ -158,6 +159,9 @@ const Portfolio = (props:any) => {
                         </button>
                     </div>
                 }
+                <div className="class-fixed-img-minime">
+                    <img src={MINIME} alt="MINIME"/>
+                </div>
                 </>
             )
             }
