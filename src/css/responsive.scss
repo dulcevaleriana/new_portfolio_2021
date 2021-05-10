@@ -1,0 +1,34 @@
+
+/*Web*/
+@media only screen and (min-width: 992px) {
+
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1024px){
+    .class-home, .class-portfolio, .class-contact {
+        grid-template-columns: calc(100vw - 16vw) !important;
+        grid-template-rows: 35% 65% !important;
+    }
+    .class-person-up, .class-aperson-sit {
+        right: 0 !important;
+    }
+    .class-menu ul li a, .class-Footer ul li a {
+        font-size: 20pt;
+    }
+}
+
+/*Tablet*/
+@media only screen and (max-width: 992px){
+
+}
+
+/*Smartphone*/
+@media only screen and (max-width: 500px) {
+
+}
+
+/*Mini Smartphone*/
+@media only screen and (max-width: 380px) {
+
+}
