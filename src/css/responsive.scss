@@ -6,15 +6,77 @@
 
 /*Tablet*/
 @media only screen and (max-width: 1024px){
-    .class-home, .class-portfolio, .class-contact {
+    body {
+        background: linear-gradient(to bottom, #f29304 80%, #fbca01 100%) !important;
+    }
+    .class-home{
         grid-template-columns: calc(100vw - 16vw) !important;
-        grid-template-rows: 35% 65% !important;
+        grid-template-rows: 35% 55% !important;
     }
     .class-person-up, .class-aperson-sit {
         right: 0 !important;
+        width: 100% !important;
     }
     .class-menu ul li a, .class-Footer ul li a {
         font-size: 20pt;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) {
+        height: auto !important
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(3) {
+        top: 0;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
+        top: 0 !important;
+        //width: 81.2% !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:first-child {
+        top: 0 !important;
+        //width: 89% !important;
+    }
+    .class-portfolio > div:nth-child(2) {
+        grid-template-rows: 70px calc(100% - 70px) !important;
+        height: 100% !important;
+    }
+    .class-portfolio, .class-contact {
+        grid-template-columns: calc(100vw - 16vw) !important;
+        grid-template-rows: 33% 55% !important;
+    }
+    .class-home > div:first-child, 
+    .class-portfolio > div:first-child, 
+    .class-contact > div:first-child {
+        bottom: 30vh !important;
+    }
+    .class-home > div:nth-child(2) h1 {
+        -webkit-box-reflect: below 380px linear-gradient(to top, #0000, #0000) !important;
+    }
+    .class-flex-button-portfolio-detail {
+        position: relative;
+        top: -28vh;
+    }
+    .class-aboutUs > div:nth-child(2) {
+        left: 0 !important;
+        right: 0 !important;
+        grid-template-columns: calc(50% - 10px) calc(50% - 20px) !important;
+        width: 100vw !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:last-child {
+        grid-template-columns: auto !important;
+        grid-template-rows: max-content !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        left: 50px !important;
+        width: 380px !important;
+        height: 380px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 450px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        font-size: 25px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 70pt !important;
     }
 }
 
