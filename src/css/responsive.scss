@@ -115,6 +115,9 @@
     .class-Unicef > div:nth-child(3) img:nth-child(2){
         right: 80vw !important;
     }
+    .class-Unicef .class-nextPage > div:first-child {
+        grid-template-columns: 22% 22% 22% !important;
+    }
 }
 
 /*Tablet*/
