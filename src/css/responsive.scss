@@ -88,23 +88,22 @@
     .class-MyPortfolioEvolution > div > h2 {
         grid-column: 1 !important;
     }
-    .class-MyPortfolioEvolution > div > div:nth-child(3n+0) {
-        grid-row: 2;
-    }
     div.class-nextPage {
         grid-template-columns: calc(65% - 10px) calc(35% - 10px) !important;
     }
-    .class-MyPortfolioEvolution > div > div:nth-child(3n+0) {
+    .class-MyPortfolioEvolution > div > div:nth-child(3n+0){
         grid-row: 2;
+    }
+    .class-GalleryScroll {
         width: calc(100% + 8vw) !important;
     }
-    .class-GreenCard > div:nth-child(2), 
-    .class-Unicef > div:nth-child(2) {
+    .class-GreenCard > div:nth-child(3), 
+    .class-Unicef > div:nth-child(3) {
         display: grid;
         grid-template-columns: calc(80% - 10px) calc(20% - 10px) !important;
     }
-    .class-GreenCard > div:nth-child(2) img, 
-    .class-Unicef > div:nth-child(2) img {
+    .class-GreenCard > div:nth-child(3) img, 
+    .class-Unicef > div:nth-child(3) img {
         width: 50vw !important;
         opacity: 0.3;
         position: relative;
@@ -112,8 +111,8 @@
         top: 3vh;
         z-index: -1;
     }
-    .class-GreenCard > div:nth-child(2) img:nth-child(2), 
-    .class-Unicef > div:nth-child(2) img:nth-child(2){
+    .class-GreenCard > div:nth-child(3) img:nth-child(2), 
+    .class-Unicef > div:nth-child(3) img:nth-child(2){
         right: 80vw !important;
     }
 }
