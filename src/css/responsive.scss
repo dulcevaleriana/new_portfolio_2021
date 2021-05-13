@@ -126,17 +126,37 @@
     }
 }
 
-/*Tablet*/
-@media only screen and (max-width: 992px){
-
+/*Smartphone*/
+@media only screen and (max-width: 800px){
+    ul.class-menuSmartphone {
+        background: linear-gradient(to top, #f29304a3 10%, #f2b705 90%) !important;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 10vh;
+        height: 90vh;
+        z-index: 999;
+    }
+    .class-menu ul {
+        display: flex;
+        justify-content: flex-start !important;
+        padding: 1vh 8vw !important;
+        width: 84vw !important;
+        flex-direction: column !important;
+    }
+    .class-menu ul li:first-child, 
+    .class-Footer ul li:first-child {
+        display: block !important;
+    }
+    .class-aboutUs > div:first-child {
+        background: #f2b705 !important;
+        top: 0 !important;
+        bottom: 50vh !important;
+    }
 }
 
 /*Smartphone*/
-@media only screen and (max-width: 500px) {
-
-}
-
-/*Mini Smartphone*/
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 360px) {
 
 }
