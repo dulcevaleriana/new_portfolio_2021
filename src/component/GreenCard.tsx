@@ -3,17 +3,24 @@ import Footer from '../component/Footer';
 import NextPage from '../component/NextPage';
 import GalleryScroll from '../component/GalleryScroll';
 
+import useMediaQuery from "../js/jsMediaQuery";
+
 import IMG1 from '../image/Web1920–6.png';
 import IMG2 from '../image/Web1920–2.png';
 import IMG3 from '../image/Web1920–1.png';
 
 const GreenCard = (props:any) => {
+
+    let isPageAvaible = useMediaQuery("(max-width: 1025px)");
+
     return(
         <div className="class-GreenCard">
             <h2>About Green Card</h2>
             {JSONGreenCard.JSONGreenCard.map((props, i) => (
                 <>
-                <GalleryScroll nameMap={props.img}/>
+                { isPageAvaible &&
+                    <GalleryScroll nameMap={props.img}/>
+                }
                 <div key={i}>
                     <div>
                         {props.info.map((data,i) => <p key={i}>{data}</p>)}

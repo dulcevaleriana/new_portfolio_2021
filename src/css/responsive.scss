@@ -5,7 +5,7 @@
 }
 
 /*Tablet*/
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px), /*resolution for iPad Pro*/ (max-width: 1024px) and (max-height: 1366px){
     body {
         background: linear-gradient(to bottom, #f29304 80%, #fbca01 100%) !important;
     }
@@ -117,6 +117,12 @@
     }
     .class-Unicef .class-nextPage > div:first-child {
         grid-template-columns: 22% 22% 22% !important;
+    }
+    .class-GreenCard > div:nth-child(3) > div:first-child, 
+    .class-Unicef > div:nth-child(3) > div:first-child{
+        display: grid;
+        grid-template-rows: 33% 33% 33%;
+        grid-gap: 20px;
     }
 }
 
