@@ -15,7 +15,7 @@ import Portfolio from './view/portfolio';
 import AboutMe from './view/aboutMe';
 import Contact from './view/contact';
 
-// import Animate from './component/animate';
+import Animate from './component/animate';
 const menuList = [
   {
     link:'/',
@@ -37,12 +37,12 @@ const menuList = [
     name:'Contact',
     page:<Contact/>
   }
-  // ,
-  // {
-  //   link:'/animatePrueba',
-  //   name:'animatePrueba',
-  //   page:<Animate/>
-  // }
+  ,
+  {
+    link:'/animatePrueba',
+    name:'animatePrueba',
+    page:<Animate/>
+  }
 ];
 function App() {
   return (

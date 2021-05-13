@@ -48,7 +48,7 @@
 
 body {
     background: $gradient-yellow;
-    overflow: hidden;
+    // overflow: hidden;
 }
 
 .class-menu {
@@ -136,11 +136,10 @@ body {
 .class-portfolio > div:nth-child(3) > img:nth-child(2),
 .class-contact > div:nth-child(3) > img:nth-child(2){
     position: absolute;
-    left: 0;
-    max-width: 500px;
-    width: 80%;
-    bottom: 70px;
-    -webkit-box-reflect: $reflect-5;
+    right: 130px;
+    width: 170px;
+    bottom: 243px;
+    -webkit-box-reflect: below -45px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -2;
 }
 
@@ -194,23 +193,23 @@ button {
 }
 
 .class-aperson-sit{
-    -webkit-box-reflect: below -171px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-    background-position: 955px !important;
+    -webkit-box-reflect: below -53px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-position: 275px !important;
 }
 
 .class-person-up{
-    -webkit-box-reflect: below -123px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    -webkit-box-reflect: below -39px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
     background-position: 0 !important;
 }
 
 .class-person-up,
 .class-aperson-sit{
-    height: 647px;
-    width: 932px;
+    height: 200px;
+    width: 285.3px;
     background: $image_animation_5;
     position: absolute;
-    bottom: 0px;
-    right: -150px;
+    bottom: 230px;
+    right: 0;
     z-index: -1;
 }
 
