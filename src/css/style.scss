@@ -48,7 +48,7 @@
 
 body {
     background: $gradient-yellow;
-    // overflow: hidden;
+    overflow: hidden;
 }
 
 .class-menu {
@@ -422,29 +422,27 @@ hr {
 }
 
 .class-aboutUs > div:nth-child(3) > div:first-child{
-    position: relative;
-    top: -6vh;
-    left: -3vw;
+    position: absolute;
+    bottom: 225px;
+    left: 5.3vw;
     z-index: -2;
 }
 
 .class-aboutUs > div:nth-child(3) > img:nth-child(2){
     position: absolute;
-    right: 114px;
-    max-width: 460px;
-    width: 80%;
-    bottom: 43px;
-    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    right: 130px;
+    width: 170px;
+    bottom: 220px;
+    -webkit-box-reflect: below -45px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -2;
 }
 
 .class-aboutUs > div:nth-child(3) > img:nth-child(3){
     position: absolute;
-    right: -42px;
-    max-width: 230px;
-    width: 50%;
-    bottom: 18px;
-    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    right: 53px;
+    width: 70px;
+    bottom: 225px;
+    -webkit-box-reflect: below -30px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -2;
 }
 

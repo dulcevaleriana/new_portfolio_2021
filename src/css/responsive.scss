@@ -13,10 +13,6 @@
         grid-template-columns: calc(100vw - 16vw) !important;
         grid-template-rows: 35% 55% !important;
     }
-    .class-person-up, .class-aperson-sit {
-        right: 0 !important;
-        width: 100% !important;
-    }
     .class-menu ul li a, .class-Footer ul li a {
         font-size: 20pt;
     }
@@ -183,8 +179,10 @@
     }
     .class-home > div:nth-child(3) > img:nth-child(2), 
     .class-portfolio > div:nth-child(3) > img:nth-child(2), 
-    .class-contact > div:nth-child(3) > img:nth-child(2) {
-        bottom: -135px !important;
+    .class-contact > div:nth-child(3) > img:nth-child(2),
+    .class-person-up, 
+    .class-aperson-sit {
+        bottom: -100px !important;
     }
     .class-home > div:nth-child(2) h1 {
         font-size: 40pt !important;
@@ -193,5 +191,36 @@
         font-size: 50pt !important;
         display: block;
         margin-top: 40px;
+    }
+    .class-portfolio > div:nth-child(2) {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100% !important;
+        grid-gap: 20px;
+        grid-template-rows: 92px 45px auto !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(2){
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) {
+        height: auto !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) > img {
+        width: 100% !important;
+        position: relative !important;
+        box-shadow: 2px 2px 20px 2px #2703a621;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
+        left: 0 !important;
+        top: -66px !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(3) {
+        top: -146px !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:first-child {
+        display: grid;
+        grid-area: auto !important;
     }
 }
