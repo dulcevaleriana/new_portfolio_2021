@@ -63,7 +63,7 @@
     .class-aboutUs > div:nth-child(2) {
         left: 0 !important;
         right: 0 !important;
-        grid-template-columns: calc(50% - 10px) calc(50% - 20px) !important;
+        grid-template-columns: calc(50% - 10px) calc(50% - 10px) !important;
         width: 100vw !important;
     }
     .class-aboutUs > div:nth-child(2) > div:last-child {
@@ -528,5 +528,50 @@
     }
     .class-PortfolioDetails {
         top: 38vh !important;
+    }
+}
+
+/*NEXUS 10 - Porttrait*/
+@media only screen and (max-width:794px) and (max-height:689px){
+    .class-person-up, 
+    .class-aperson-sit{
+        bottom: -135px !important;
+    }
+    .class-home > div:nth-child(3), 
+    .class-portfolio > div:nth-child(3), 
+    .class-contact > div:nth-child(3) {
+        z-index: -1;
+    }
+    .class-PortfolioDetails {
+        top: 26vh !important;
+    }
+    .class-nextPage > div:first-child,
+    .class-Unicef .class-nextPage > div:first-child {
+        grid-template-columns: 11% 11% 11% !important;
+    }
+    .class-Footer ul li a {
+        font-size: 12pt !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        width: 170px !important;
+        height: 170px !important;
+        left: calc(50% - 85px) !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 210px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 40pt !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        font-size: 11pt !important;
+    }
+    .class-animacion-0 {
+        height: calc(100vh - (52.55px + 0vh)) !important;
+        width: 383px !important;
+    }
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        top: -4vh !important;
+        left: -4vw !important;
     }
 }
