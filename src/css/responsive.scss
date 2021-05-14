@@ -198,6 +198,7 @@
         grid-template-columns: 100% !important;
         grid-gap: 20px;
         grid-template-rows: 92px 45px auto !important;
+        z-index: 999;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(2){
         display: flex;
@@ -214,13 +215,84 @@
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0 !important;
-        top: -66px !important;
+        top: -86px !important;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(3) {
-        top: -146px !important;
+        top: -186px !important;
     }
     .class-portfolio > div:nth-child(2) > div:first-child {
         display: grid;
         grid-area: auto !important;
+    }
+    .class-PortfolioDetails {
+        top: 35vh !important;
+    }
+    .class-flex-button-portfolio-detail {
+        position: relative;
+        top: -18vh !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:first-child p span {
+        display: none;
+    }
+    .class-PortfolioDetails {
+        display: block !important;
+        width: calc(100% - 20px);
+        padding: 20px 10px !important;
+    }
+    .class-GalleryScroll {
+        width: calc(100% + 20px) !important;
+        left: -10px !important;
+        position: relative;
+    }
+    div.class-nextPage {
+        grid-template-columns: 100% !important;
+        padding: 0 30px;
+    }
+    div.class-nextPage > div:nth-child(2){
+        grid-row: 1;
+    }
+    .class-nextPage > div:first-child > img:nth-child(2),
+    .class-nextPage > div:first-child > img:first-child{
+        display: none;
+    }
+    .class-nextPage > div:first-child > img:nth-child(3){
+        left: -120px;
+        top: 0 !important;
+    }
+    .class-MyPortfolioEvolution > div {
+        grid-template-columns: 100% !important;
+        width: 100% !important;
+    }
+    .class-MyPortfolioEvolution > div > div:nth-child(3n+0) {
+        grid-row: 3 !important;
+    }
+    .class-Footer ul li a {
+        font-size: 12pt !important;
+    }
+    .class-GalleryScroll {
+        margin-bottom: 20px !important;
+    }
+    .class-GreenCard > div:nth-child(3), 
+    .class-Unicef > div:nth-child(3) {
+        display: grid;
+        grid-template-columns: 100% !important;
+    }
+    .class-GreenCard > div:nth-child(3) img, 
+    .class-Unicef > div:nth-child(3) img {
+        width: 80vw !important;
+        right: -20vw !important;
+        top: 5vh !important;
+        margin-bottom: 15vh;
+    }
+    .class-GreenCard > div:nth-child(3) img:nth-child(2), 
+    .class-Unicef > div:nth-child(3) img:nth-child(2) {
+        right: 20vw !important;
+    }
+    .class-GreenCard > div:nth-child(3) > div:nth-child(2), 
+    .class-Unicef > div:nth-child(3) > div:nth-child(2) {
+        position: absolute;
+    }
+    .class-Footer {
+        width: 100% !important;
     }
 }

@@ -54,13 +54,13 @@ const Portfolio = (props:any) => {
                     (
                         <>
                         {viewPage1 &&
-                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> My Portfolio Evolution</p>
+                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> <span>My Portfolio Evolution</span></p>
                         }
                         {viewPage2 &&
-                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> Green Card</p>
+                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> <span>Green Card</span></p>
                         }
                         {viewPage3 &&
-                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> Unicef</p>
+                        <p><strong onClick={() => setMenuBase(true)}>Portfolio -- </strong> <span>Unicef</span></p>
                         }
                         </>
                     )}
