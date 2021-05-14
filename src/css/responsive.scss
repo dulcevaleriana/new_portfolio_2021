@@ -149,7 +149,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        top: 10vh;
+        top: 9vh;
         height: 90vh;
         z-index: 999;
     }
@@ -259,8 +259,8 @@
         padding: 20px 8vw !important;
     }
     .class-GalleryScroll {
-        width: calc(100% + 20px) !important;
-        left: -10px !important;
+        width: calc(100% + 60px) !important;
+        left: -30px !important;
         position: relative;
     }
     div.class-nextPage {
@@ -283,7 +283,7 @@
         width: 100% !important;
     }
     .class-MyPortfolioEvolution > div > div:nth-child(3n+0) {
-        grid-row: 3 !important;
+        grid-row: 2 !important;
     }
     .class-Footer ul li a {
         font-size: 12pt !important;
@@ -372,5 +372,8 @@
     }
     .class-contact > div:nth-child(2) {
         grid-template-rows: 20px 30px 55px 55px 55px 150px !important;
+    }
+    .class-Footer > div:first-child > strong {
+        font-size: 30pt !important;
     }
 }
