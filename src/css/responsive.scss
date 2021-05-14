@@ -575,3 +575,44 @@
         left: -4vw !important;
     }
 }
+
+/*Surface Pro 3 - Porttrait*/
+@media only screen and (max-width:954px) and (max-height:689px){
+    .class-home > div:nth-child(3), 
+    .class-portfolio > div:nth-child(3), 
+    .class-contact > div:nth-child(3) {
+        z-index: -1;
+    }
+    .class-home > div:nth-child(3) > img:nth-child(2), 
+    .class-portfolio > div:nth-child(3) > img:nth-child(2), 
+    .class-contact > div:nth-child(3) > img:nth-child(2),
+    .class-person-up, 
+    .class-aperson-sit {
+        bottom: -20px !important;
+    }
+    .class-menu ul li a, 
+    .class-Footer ul li a{
+        font-size: 14pt !important;
+    }
+    .class-PortfolioDetails {
+        top: 25vh !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        width: 280px !important;
+        height: 280px !important;
+        left: calc(50% - 140px) !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 323px !important;
+    }
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        left: -5vw !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        display: none;
+    }
+    .class-aboutUs > div:nth-child(3) > img:nth-child(2),
+    .class-aboutUs > div:nth-child(3) > img:nth-child(3) {
+        bottom: 20px !important;
+    }
+}
