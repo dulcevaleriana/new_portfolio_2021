@@ -217,7 +217,7 @@
         grid-template-columns: 100% !important;
         grid-gap: 20px;
         grid-template-rows: 92px 45px auto !important;
-        z-index: 999;
+        z-index: 9;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(2){
         display: flex;
@@ -255,8 +255,8 @@
     }
     .class-PortfolioDetails {
         display: block !important;
-        width: calc(100% - 20px);
-        padding: 20px 10px !important;
+        width: calc(100% - 16vw);
+        padding: 20px 8vw !important;
     }
     .class-GalleryScroll {
         width: calc(100% + 20px) !important;
@@ -363,5 +363,14 @@
     .class-aboutUs > div:nth-child(3) > img:nth-child(3),
     .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
         z-index: -3 !important;
+    }
+    .class-contact > div:nth-child(2) > input:nth-child(4),
+    .class-contact > div:nth-child(2) > h2, 
+    .class-contact > div:nth-child(2) > textarea, 
+    .class-contact > div:nth-child(2) > input:nth-child(5) {
+        grid-column: 1 !important;
+    }
+    .class-contact > div:nth-child(2) {
+        grid-template-rows: 20px 30px 55px 55px 55px 150px !important;
     }
 }
