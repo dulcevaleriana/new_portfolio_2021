@@ -295,4 +295,12 @@
     .class-Footer {
         width: 100% !important;
     }
+    .class-fixed-img-minime {
+        position: fixed;
+        right: -7px !important;
+        bottom: -21px !important;
+        width: 100px !important;
+        height: 100px !important;
+        z-index: 999;
+    }
 }
