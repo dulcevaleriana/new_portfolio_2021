@@ -1,6 +1,7 @@
 @import './variable.scss';
 @import './animate.scss';
 @import './animation.scss';
+@import './responsive.scss';
 
 /*Inicio*/
 *{
@@ -135,11 +136,10 @@ body {
 .class-portfolio > div:nth-child(3) > img:nth-child(2),
 .class-contact > div:nth-child(3) > img:nth-child(2){
     position: absolute;
-    left: 0;
-    max-width: 500px;
-    width: 80%;
-    bottom: 70px;
-    -webkit-box-reflect: $reflect-5;
+    right: 130px;
+    width: 170px;
+    bottom: 243px;
+    -webkit-box-reflect: below -45px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -2;
 }
 
@@ -193,23 +193,23 @@ button {
 }
 
 .class-aperson-sit{
-    -webkit-box-reflect: below -171px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-    background-position: 955px !important;
+    -webkit-box-reflect: below -53px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    background-position: 275px !important;
 }
 
 .class-person-up{
-    -webkit-box-reflect: below -123px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+    -webkit-box-reflect: below -39px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
     background-position: 0 !important;
 }
 
 .class-person-up,
 .class-aperson-sit{
-    height: 647px;
-    width: 932px;
+    height: 200px;
+    width: 285.3px;
     background: $image_animation_5;
     position: absolute;
-    bottom: 0px;
-    right: -150px;
+    bottom: 230px;
+    right: 0;
     z-index: -1;
 }
 
@@ -279,6 +279,7 @@ button {
     overflow-y: auto;
     padding: 20px 8vw;
     box-shadow: $shadow-inner;
+    overflow-x: hidden;
 }
 
 .class-flex-button-portfolio-detail{
@@ -304,11 +305,10 @@ button {
     margin: 0 !important;
 }
 
-.class-MyPortfolioEvolution > div > div:nth-child(3n+0){
-    display: flex;
+.class-GalleryScroll{
+    display: flex !important;
     width: 103%;
     overflow-x: auto;
-    max-height: 268px;
 }
 
 .class-nextPage {
@@ -407,6 +407,12 @@ hr {
     width: 104%;
 }
 
+.class-GreenCard .class-GalleryScroll,
+.class-Unicef .class-GalleryScroll{
+    margin-bottom: 30px;
+    width: 100%;
+}
+
 .class-aboutUs > div:nth-child(3) {
     position: absolute;
     left: 8vw;
@@ -416,29 +422,27 @@ hr {
 }
 
 .class-aboutUs > div:nth-child(3) > div:first-child{
-    position: relative;
-    top: -6vh;
-    left: -3vw;
+    position: absolute;
+    bottom: 225px;
+    left: 5.3vw;
     z-index: -2;
 }
 
 .class-aboutUs > div:nth-child(3) > img:nth-child(2){
     position: absolute;
-    right: 114px;
-    max-width: 460px;
-    width: 80%;
-    bottom: 43px;
-    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    right: 130px;
+    width: 170px;
+    bottom: 220px;
+    -webkit-box-reflect: below -45px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -2;
 }
 
 .class-aboutUs > div:nth-child(3) > img:nth-child(3){
     position: absolute;
-    right: -42px;
-    max-width: 230px;
-    width: 50%;
-    bottom: 18px;
-    -webkit-box-reflect: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
+    right: 53px;
+    width: 70px;
+    bottom: 225px;
+    -webkit-box-reflect: below -30px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.4) 100%);
     z-index: -2;
 }
 

@@ -1,3 +1,7 @@
+// import ClassAnimacion1 from './SVG/class-animacion-1';
+
+import IMG_PRUEBA from "../image/animacion-1.svg";
+
 const animate = (props:any) => {
 return(
     <div className="class-animate">
@@ -16,6 +20,12 @@ return(
         <div>
         <div className="class-animacion-8"/>
         <div className="class-animacion-9"/>
+        </div>
+        <div>
+            {/* <div className="class-animacion-b1"/> */}
+            <img src={IMG_PRUEBA} alt="img"/>
+            {/* <ClassAnimacion1/> */}
+
         </div>
     </div>
 )

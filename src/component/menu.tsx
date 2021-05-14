@@ -1,24 +1,40 @@
-import React from "react";
+import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
+import useMediaQuery from "../js/jsMediaQuery";
 
 import LOGO from '../image/icon-logo.svg';
 
-const menu = (props:any) => {
+const Menu = (props:any) => {
+    const [openMenu, setOpenMenu] = useState(false);
     const menuList = props.menuList;
+    let isPageAvaible = useMediaQuery("(min-width: 800px)");
+
     return(
         <div className="class-menu">
-            <NavLink to="/">
-                <img src={LOGO} alt="LOGO"/>
-            </NavLink>
-            <ul>
-                {menuList.map((list:any,i:any) =>
-                <li key={i}>
-                    <NavLink to={list.link} activeClassName="active">{list.name}</NavLink>
-                </li>
+            {isPageAvaible ? (
+                <NavLink to="/">
+                    <img src={LOGO} alt="LOGO"/>
+                </NavLink>
+            ):(
+                <>
+                {!openMenu ? (
+                    <img src={LOGO} alt="LOGO" onClick={() => setOpenMenu(true)}/>
+                ):(
+                    <img src={LOGO} alt="LOGO" onClick={() => setOpenMenu(false)}/>
                 )}
-            </ul>
+                </>
+            )}
+            {(isPageAvaible || openMenu) &&
+                <ul className={isPageAvaible ? "" : "class-menuSmartphone"}>
+                    {menuList.map((list:any,i:any) =>
+                    <li key={i} onClick={() => setOpenMenu(false)}>
+                        <NavLink to={list.link} activeClassName="active">{list.name}</NavLink>
+                    </li>
+                    )}
+                </ul>
+            }
         </div>
     )
 }
 
-export default menu;
+export default Menu;
