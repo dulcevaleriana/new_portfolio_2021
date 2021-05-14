@@ -474,4 +474,41 @@
     .class-nextPage > div:first-child img {
         top: 0 !important;
     }
+    .class-contact > div:nth-child(2) {
+        overflow-y: auto;
+        width: 84vw;
+        height: 80.8vh;
+        padding-right: 8vw;
+    }
+    .class-animacion-0 {
+        width: 313px !important;
+        height: 100vh;
+    }
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        top: -10vh !important;
+        left: -15vw !important;
+    }
+    .class-aboutUs > div:nth-child(2) {
+        grid-template-columns: 27% 73% !important;
+        grid-gap: 0 !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        left: calc(50% - 60px) !important;
+        width: 120px !important;
+        height: 120px !important;
+        top: 30px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 144px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 38pt !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        display: none;
+    }
+    .class-aboutUs > div:nth-child(3) > img:nth-child(3),
+    .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
+        bottom: -95px !important;
+    }
 }
