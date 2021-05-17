@@ -7,7 +7,7 @@ import LOGO from '../image/icon-logo.svg';
 const Menu = (props:any) => {
     const [openMenu, setOpenMenu] = useState(false);
     const menuList = props.menuList;
-    let isPageAvaible = useMediaQuery("(min-width: 800px)");
+    let isPageAvaible = useMediaQuery("(min-width: 801px)");
 
     return(
         <div className="class-menu">
