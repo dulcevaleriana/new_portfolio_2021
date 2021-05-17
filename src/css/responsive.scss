@@ -32,13 +32,34 @@
     }
     .class-aboutUs > div:nth-child(2) > div:first-child::after {
         top: 195px !important;
-        left: calc(50% - 98.5px) !important;
+        left: calc(50% - 90px) !important;
     }
     .class-aboutUs > div:nth-child(2) > div:first-child > div {
         top: 380px !important;
     }
     .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
         font-size: 50pt !important;
+    }
+}
+/*Escritorio Medio - Landscape*/
+@media only screen and (max-width:1440px) and (max-height:900px){
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        bottom: 330px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        top: 144px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 320px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 38pt !important;
+    }
+    p {
+        font-size: 15pt !important;
+    }
+    .class-PortfolioDetails {
+        top: 27vh !important;
     }
 }
 /*ordenador portátil medio - Landscape*/
@@ -187,6 +208,9 @@
 
 /*Smartphone*/
 @media only screen and (max-width: 801px){
+    .class-flex-button-portfolio-detail {
+        min-height: auto !important;
+    }
     ul.class-menuSmartphone {
         background: linear-gradient(to top, #f29304a3 10%, #f2b705 90%) !important;
         position: fixed;
@@ -1331,6 +1355,7 @@
     }
     .class-aboutUs > div:nth-child(2) > div:first-child::after {
         left: calc(50% - 140px) !important;
+        top: 50px !important;
         width: 280px !important;
         height: 280px !important;
     }
