@@ -68,7 +68,6 @@
         height: 55vh !important;
     }
 }
-
 /*Tablet*/
 @media only screen and (max-width: 1024px), /*iPad Pro*/ (max-width: 1024px) and (max-height: 1366px){
     .class-animacion-0 {
@@ -205,7 +204,6 @@
         bottom: 200px !important;
     }
 }
-
 /*Smartphone*/
 @media only screen and (max-width: 801px){
     .class-flex-button-portfolio-detail {
@@ -256,7 +254,57 @@
         margin-top: 40px;
     }
 }
-
+/*Movil Grande - Portátil*/
+@media only screen and (max-width:720px) and (max-height:1280px){
+    .class-person-up, 
+    .class-aperson-sit {
+        bottom: -135px !important;
+    }
+    .class-aboutUs > div:nth-child(2) {
+        left: 0 !important;
+        right: 0 !important;
+        grid-template-columns: 100% !important;
+        width: 100vw !important;
+        overflow-y: auto;
+        height: calc(100vh - (52.55px + 5vh)) !important;
+        grid-template-rows: calc(100vh - (52.55px + 38vh)) calc(100vh - (52.55px + 5vh)) !important;
+        grid-gap: 0 !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        left: calc(50% - 190px) !important;
+        width: 380px !important;
+        height: 380px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 436px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 50pt !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child,
+    .class-aboutUs > div:nth-child(2) > div:nth-child(2) {
+        border: none !important;
+        padding: 0 8vh !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:last-child {
+        height: fit-content !important;
+        overflow-y: unset !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        font-size: 15pt !important;
+    }
+    .class-animacion-0 {
+        width: 93vw !important;
+    }
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        top: 5vh !important;
+        left: -2vw !important;
+    }
+    .class-aboutUs > div:nth-child(3) > img:nth-child(3),
+    .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
+        z-index: -3 !important;
+    }
+}
 /*Smartphone*/
 @media only screen and (max-width: 360px), /*Samsung Galaxy S10*/ (max-width: 360px) and (max-height: 760px) {
     .class-home > div:first-child, 
@@ -445,7 +493,6 @@
         font-size: 30pt !important;
     }
 }
-
 /*HTC - ONE X - Landscape*/
 @media only screen and (max-width:634px) and (max-height:349px){
     .class-home > div:nth-child(2) h1 {
@@ -580,7 +627,6 @@
         bottom: -95px !important;
     }
 }
-
 /*HTC - ONE X - Porttrait*/
 @media only screen and (max-width:354px) and (max-height:629px){
     .class-home > div:nth-child(3), 
@@ -598,7 +644,6 @@
         top: 38vh !important;
     }
 }
-
 /*NEXUS 10 - Porttrait*/
 @media only screen and (max-width:794px) and (max-height:689px){
     .class-person-up, 
@@ -643,7 +688,6 @@
         left: -4vw !important;
     }
 }
-
 /*Surface Pro 3 - Porttrait*/
 @media only screen and (max-width:954px) and (max-height:689px){
     .class-home > div:nth-child(3), 
@@ -681,7 +725,6 @@
         bottom: 20px !important;
     }
 }
-
 /*iPad - Porttrait*/
 @media only screen and (max-width:768px) and (max-height:1024px){
     .class-home > div:nth-child(3), 
@@ -715,6 +758,8 @@
     .class-aboutUs > div:nth-child(2) > div:first-child::after {
         width: 280px !important;
         height: 280px !important;
+        left: calc(50% - 140px) !important;
+        top: 40px !important;
     }
     .class-aboutUs > div:nth-child(2) > div:first-child > div {
         top: 320px !important;
@@ -723,7 +768,6 @@
         font-size: 50pt !important;
     }
 }
-
 /*iPhone 6/7/8 iOS 11*/ 
 @media only screen and (max-width: 375px) and (max-height: 667px) {
     .class-home > div:first-child, 
@@ -912,7 +956,6 @@
         font-size: 30pt !important;
     }
 }
-
 /*iPhone 6/7/8 Plus iOS 11*/ 
 @media only screen and (max-width: 414px) and (max-height: 736px) {
     .class-home > div:first-child, 
@@ -1059,6 +1102,7 @@
         left: calc(50% - 140px) !important;
         width: 280px !important;
         height: 280px !important;
+        top: 40px !important;
     }
     .class-aboutUs > div:nth-child(2) > div:first-child > div {
         top: 330px !important;
@@ -1101,7 +1145,6 @@
         font-size: 30pt !important;
     }
 }
-
 /*iPhone X/XS iOS 12*/ 
 @media only screen and (max-width: 375px) and (max-height: 812px) {
     .class-home > div:first-child, 
@@ -1290,7 +1333,6 @@
         font-size: 30pt !important;
     }
 }
-
 /*iPhone 5/SE*/ 
 @media only screen and (max-width: 320px) and (max-height: 568px){
     .class-home > div:nth-child(2) h2 {
@@ -1334,6 +1376,11 @@
     }
     .class-aboutUs > div:nth-child(2) {
         margin-top: 13px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child, 
+    .class-aboutUs > div:nth-child(2) > div:nth-child(2) {
+        border: none !important;
+        padding: 0px 4vh !important;
     }
 }
 /*iPhone 6/7/8*/ 
@@ -1416,9 +1463,20 @@
         height: 150px !important;
     }
 }
-
 /*Galaxy Fold*/ 
 @media only screen and (max-width: 280px) and (max-height: 653px){
+    p,
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        font-size: 12pt !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child, 
+    .class-aboutUs > div:nth-child(2) > div:nth-child(2) {
+        border: none !important;
+        padding: 0px 2vh !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 40pt !important;
+    }
     .class-portfolio > div:nth-child(3) {
         width: 100% !important;
         left: 0% !important;
