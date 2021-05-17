@@ -1,7 +1,51 @@
 
-/*Web*/
-@media only screen and (min-width: 992px) {
-
+/*Web Resolución Grande*/
+@media only screen and (max-width:1920px) and (max-height:1080px){
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) {
+        height: 50vh !important;
+    }
+    .class-menu ul li a,
+    .class-Footer ul li a {
+        font-size: 20pt !important;
+    }
+    p {
+        font-size: 18pt !important;
+    }
+    .class-portfolio > div:nth-child(2) > div:first-child p, 
+    .class-portfolio > div:nth-child(2) > div:first-child h2 {
+        line-height: 0;
+        font-size: 25pt !important;
+    }
+    .class-portfolio > div:nth-child(2) {
+        grid-template-rows: 135px auto !important;
+    }
+    .class-flex-button-portfolio-detail {
+        min-height: 135px !important;
+        align-items: center !important;
+    }
+    .class-PortfolioDetails {
+        top: 25vh !important;
+    }
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        bottom: 435px !important;
+        left: 6.3vw !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        top: 195px !important;
+        left: calc(50% - 98.5px) !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 380px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 50pt !important;
+    }
+}
+/*ordenador portátil medio - Landscape*/
+@media only screen and (max-width:1366px) and (max-height:768px){
+    .class-portfolio > div:nth-child(2) > div:nth-child(3) {
+        height: 55vh !important;
+    }
 }
 
 /*Tablet*/
@@ -1319,15 +1363,11 @@
     .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
         z-index: -3 !important;
     }
-    .class-portfolio > div:nth-child(3) {
-        width: 60%;
-        left: 40%;
-    }
     .class-portfolio > div:nth-child(2) > div:first-child h2 {
         font-size: 13pt !important;
     }
     .class-PortfolioDetails {
-        top: 25vh !important;
+        top: 35vh !important;
     }
     .class-aboutUs span {
         display: none;
