@@ -1,0 +1,21 @@
+@supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) { 
+    .class-menu ul li a, 
+    .class-Footer ul li a {
+        margin: 0 20px;
+    }
+    .class-home > div:nth-child(3) > img:nth-child(2), 
+    .class-portfolio > div:nth-child(3) > img:nth-child(2), 
+    .class-contact > div:nth-child(3) > img:nth-child(2),
+    .class-person-up, 
+    .class-aperson-sit,
+    .class-home > div:nth-child(3), 
+    .class-portfolio > div:nth-child(3), 
+    .class-contact > div:nth-child(3){
+        z-index: 0 !important;
+    }
+    .class-home > div:nth-child(2), 
+    .class-portfolio > div:nth-child(2), 
+    .class-contact > div:nth-child(2){
+        z-index: 888 !important;
+    }
+}
