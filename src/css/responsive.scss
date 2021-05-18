@@ -1562,3 +1562,40 @@
         align-items: center;
     }
 }
+/*Standar Size*/ 
+@media only screen and (max-width: 1024px) and (max-height: 768px){
+    .class-home > div:nth-child(3) > img:nth-child(2), 
+    .class-portfolio > div:nth-child(3) > img:nth-child(2), 
+    .class-contact > div:nth-child(3) > img:nth-child(2),
+    .class-person-up, 
+    .class-aperson-sit {
+        bottom: 0px !important;
+    }
+    .class-home > div:nth-child(3), 
+    .class-portfolio > div:nth-child(3), 
+    .class-contact > div:nth-child(3) {
+        z-index: -1;
+    }
+    .class-PortfolioDetails {
+        top: 29vh !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        left: calc(50% - 140px) !important;
+        width: 280px !important;
+        height: 280px !important;
+    }
+    .class-aboutUs > div:nth-child(3) > div:first-child {
+        top: 0vh !important;
+        left: -4vw !important;
+        height: calc(100vh - (52.55px + 0vh)) !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div {
+        top: 320px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        font-size: 50pt !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child > div > p {
+        font-size: 14pt !important;
+    }
+}
