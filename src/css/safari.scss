@@ -1,7 +1,10 @@
 @supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) { 
+    .class-menu ul li a {
+        margin-left:20px;
+    }
     .class-menu ul li a, 
     .class-Footer ul li a {
-        margin: 0 20px;
+        margin-right:20px;
     }
     .class-home > div:nth-child(3) > img:nth-child(2), 
     .class-portfolio > div:nth-child(3) > img:nth-child(2), 
@@ -11,7 +14,8 @@
     .class-home > div:nth-child(3), 
     .class-portfolio > div:nth-child(3), 
     .class-contact > div:nth-child(3),
-    .class-aboutUs > div:nth-child(3) > div:first-child{
+    .class-aboutUs > div:nth-child(3) > div:first-child,
+    .class-aboutUs > div:nth-child(3){
         z-index: 0 !important;
     }
     .class-home > div:nth-child(2), 
@@ -19,8 +23,14 @@
     .class-contact > div:nth-child(2){
         z-index: 888 !important;
     }
+    ul.class-menuSmartphone li {
+        margin: 10px 0 !important;
+    }
     /*MAC Web Resolución Grande*/
     @media only screen and (max-width:1485px) and (max-height:913px){
+        .class-home > div:nth-child(2){
+            width: 50vw;
+        }
         .class-aboutUs > div:nth-child(3) > div:first-child {
             bottom: 320px !important;
             left: 6.3vw !important;
@@ -37,6 +47,32 @@
         }
         .class-PortfolioDetails {
             top: 27vh !important;
+        }
+    }
+    /*MAC Web Resolución Mediana*/
+    @media only screen and (max-width:1214px) and (max-height:623px){
+        .class-aboutUs > div:nth-child(3) > div:first-child {
+            bottom: 210px !important;
+            left: 5.3vw !important;
+            z-index: 0 !important;
+        }
+        .class-aboutUs > div:nth-child(2) > div:first-child::after{
+            top: 20px !important;
+        }
+        .class-aboutUs > div:nth-child(2) > div:first-child > div{
+            top: 200px !important;
+        }
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+            font-size: 30pt !important;
+        }
+        p{
+            font-size: 11pt !important;
+        }
+        .class-aboutUs > div:nth-child(2) > div:last-child{
+            height: calc(100vh - (52.55px + 10vh)) !important;
+        }
+        .class-PortfolioDetails {
+            top: 29vh !important;
         }
     }
 }
