@@ -15,6 +15,8 @@ import Portfolio from './view/portfolio';
 import AboutMe from './view/aboutMe';
 import Contact from './view/contact';
 
+import './image/unicef/1.png';
+
 // import Animate from './component/animate';
 const menuList = [
   {
