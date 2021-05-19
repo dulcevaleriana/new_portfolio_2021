@@ -2,14 +2,17 @@
     "JSONGreenCard": [
         {
             "info":[ 
-                "11Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-                "22Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "33Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "This case study is oriented towards a landing page that serves to show the base information of this Project, This project is based on creating a SAAP software (Software As A Product), to sell users a service that allows them to pay their telephone bills of water light, general services, so that they can start micro businesses and provide services to people who do not know how to use these technologies.", 
+                "The first stage of this process was created the views of the page and later we are going to make modifications in the already created system. For this project, Adobe XD was used to create the user interfaces and the implementation of the navigation flow, later we initialize the project in React and we store it in an internal repository on GitHub, then we begin to make each view within its respective branch to make Pull Request and thus not alter the Project master.",
+                "Once the views were completed, we began to make the responsive in two phases: Phase one would be the optimization in terms of screen resolution And phase two would be use in terms of browsers, finally we made the text assembly and added some animations that did not are so invasive to give a fresh and modern touch to the page."
             ],
             "img":[
-                "/static/media/Image4.ac59ffd7.png",
-                "/static/media/Image4.ac59ffd7.png",
-                "/static/media/Image4.ac59ffd7.png"
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png"
             ]
         }
     ]

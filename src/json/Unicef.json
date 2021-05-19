@@ -2,14 +2,27 @@
     "JSONUnicef": [
         {
             "info":[ 
-                "11Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", 
-                "22Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                "33Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                "This project is in beta phase, we have made a new navigation flow based on the previous design of this form.", 
+                "Later we will carry out a new assembly guiding us through the following work phases that I implement myself."
             ],
             "img":[
-                "/static/media/Web1920–1.741f680d.png",
-                "/static/media/Web1920–1.741f680d.png",
-                "/static/media/Web1920–1.741f680d.png"
+                "1.png",
+                "2.png",
+                "3.png",
+                "4.png",
+                "5.png",
+                "6.png",
+                "7.png",
+                "8.png",
+                "9.png",
+                "10.png",
+                "11.png",
+                "12.png",
+                "13.png",
+                "14.png",
+                "15.png",
+                "16.png",
+                "17.png"
             ]
         }
     ]

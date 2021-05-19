@@ -1,0 +1,18 @@
+@supports (-ms-ime-align:auto) and (color:unset) { 
+    * { 
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        scrollbar-width: thin;
+    }
+
+    .class-menu ul li, 
+    .class-Footer ul li {
+        margin: 0 10px !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:last-child {
+        background: #f2f0d5 !important;
+        height: calc(-52px + 92vh) !important;
+    }
+    .class-aboutUs > div:nth-child(2) > div:first-child::after {
+        box-shadow: 0px 0px 0px 2000px #f2f0d5 !important;
+    }  
+}

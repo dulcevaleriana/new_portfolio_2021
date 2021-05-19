@@ -17,7 +17,7 @@ const MyPortfolioEvolution = (props:any) => {
                         {props.info.map((data,i) => <p key={i}>{data}</p>)}
                     </div>
                     <div>
-                        <GalleryScroll nameMap={props.img}/>
+                        <GalleryScroll nameMap={props.img} folderName={"myportfolioevolution"}/>
                     </div>
                 </div>
             ))}
