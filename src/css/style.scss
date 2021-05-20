@@ -310,7 +310,7 @@ button {
 
 .class-GalleryScroll{
     display: flex !important;
-    width: 103%;
+    width: 100%;
     overflow-x: auto;
 }
 
@@ -604,5 +604,9 @@ textarea {
 }
 
 .class-fixed-img-minime img {
+    width: 100%;
+}
+
+.class-GalleryScroll img{
     width: 100%;
 }
