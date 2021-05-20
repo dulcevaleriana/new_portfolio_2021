@@ -4,6 +4,12 @@
             "title":"Portfolio 2021",
             "info":[ 
                 "This is the most recent version of my portfolio, in this version I believe not only a sample of interface design cases, but also explaining the process of layout, uploading and delivery. I began to divide the realization of this portfolio into the following stages:", 
+                "- Interface design",
+                "- Web structure (HTML / CSS / SASS / REACT)",
+                "- Responsive Design (CSS GRID / FLEX)",
+                "- Responsive for screen resolutions (PC / Laptop / Tablet / Smartphone)",
+                "- Responsive for web browsers (Google Chrome / Safari / Firefox / Microsoft Edge)",
+                "- Web animation (CSS KEYFRAME)",
                 "In the first stage, what is the interface design, in this case, I used Adobe XD to pass the sketches to final wireframes, and then in the layout, it initialized the project in REACT implementing REACT HOOKS, later I uploaded the repository on the GitHub platform to keep it updated via console.",
                 "I was creating each view within each branch, to keep a record of what was created within the same repository, after this we go to the responsive stage where we first apply responsive for different devices in terms of resolution (of course, create a style sheet there apart implementing SASS / CSS) then go to the next stage of responsive that would already be for different browsers there create a sheet for each browser and within that sheet implement a tag per browser, to specify what has to be modified for each browser so that as well as the illusion that it is 'rendering' the same in all, because not all browsers project the page in the same way because there are properties that as such do not support, so it is good to take those details into account also so that the page looks the same way in all browsers used.",
                 "In this case, I used it in terms of screen resolution: PC / Laptop / Tablet / Smartphone; and for browsers: Google Chrome / Safari / Firefox / Microsoft Edge. Finally, we go to the stage of assembling the text and images of the project, tell the information. Them, we would miss the part of the animation that in this case opts to make the character animation via frame by frame using css keyframes."
