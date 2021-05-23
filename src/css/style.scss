@@ -187,6 +187,11 @@ button {
     font-size: 12pt;
     color: $color-pupple;
 }
+button:hover{
+    border: 2px solid $color-lightPupple !important;
+    color: $color-lightPupple !important;
+    transition: 1s;
+}
 
 button a {
     text-decoration: none;
@@ -694,4 +699,10 @@ textarea {
     position: absolute;
     top: 20%;
     right: 20%;
+}
+
+.class-MyPortfolioEvolution,
+.class-GreenCard,
+.class-Unicef {
+    width: 100%;
 }

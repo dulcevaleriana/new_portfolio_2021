@@ -70,22 +70,34 @@ const Portfolio = (props:any) => {
                     {viewPage1 &&
                     <>
                     <h2>My Portfolio Evolution</h2>
-                    <p>{JSONMyPortfolioEvolution.JSONMyPortfolioEvolution[0].info[0]}</p>
-                    <button onClick={() => setMenuBase(false)}>See More</button>
+                    {menuBase &&
+                        <>
+                        <p>{JSONMyPortfolioEvolution.JSONMyPortfolioEvolution[0].info[0]}</p>
+                        <button onClick={() => setMenuBase(false)}>See More</button>
+                        </>
+                    }
                     </>
                     }
                     {viewPage2 &&
                     <>
                     <h2>Green Card</h2>
-                    <p>{JSONGreenCard.JSONGreenCard[0].info[0]}</p>
-                    <button onClick={selectThis2}>See More</button>
+                    {menuBase &&
+                        <>
+                        <p>{JSONGreenCard.JSONGreenCard[0].info[0]}</p>
+                        <button onClick={() => setMenuBase(false)}>See More</button>
+                        </>
+                    }
                     </>
                     }
                     {viewPage3 &&
                     <>
                     <h2>Unicef</h2>
-                    <p>{JSONUnicef.JSONUnicef[0].info[0]}</p>
-                    <button onClick={selectThis3}>See More</button>
+                    {menuBase &&
+                        <>
+                        <p>{JSONUnicef.JSONUnicef[0].info[0]}</p>
+                        <button onClick={() => setMenuBase(false)}>See More</button>
+                        </>
+                    }
                     </>
                     }
                 </div>
