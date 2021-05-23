@@ -15,12 +15,30 @@
                 "In this case, I used it in terms of screen resolution: PC / Laptop / Tablet / Smartphone; and for browsers: Google Chrome / Safari / Firefox / Microsoft Edge. Finally, we go to the stage of assembling the text and images of the project, tell the information. Them, we would miss the part of the animation that in this case opts to make the character animation via frame by frame using css keyframes."
             ],
             "img":[
-                "2021-1.png",
-                "2021-2.png",
-                "2021-3.png",
-                "2021-4.png",
-                "2021-5.png",
-                "2021-6.png"
+                {
+                    "original":"/IMG/myportfolioevolution/2021-1.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2021-1.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2021-2.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2021-2.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2021-3.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2021-3.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2021-4.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2021-4.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2021-5.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2021-5.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2021-6.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2021-6.png"
+                }
             ]
         },
         {
@@ -29,12 +47,30 @@
                 "In this version I wanted to orient it exclusively for user interface design for customer acquisition; I presented three cases of the most recent teeth that I have had in terms of creating the navigation flow of your system, the UI / KIT (which would be the creation of the elements, components) and the results that each Project produced. The technologies used were the same as the previous one, say PHP, HTML, CSS and BOOTSTRAP."
             ],
             "img":[
-                "2019-1.png",
-                "2019-2.png",
-                "2019-3.png",
-                "2019-4.png",
-                "2019-5.png",
-                "2019-6.png"
+                {
+                    "original":"/IMG/myportfolioevolution/2019-1.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2019-1.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2019-2.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2019-2.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2019-3.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2019-3.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2019-4.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2019-4.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2019-5.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2019-5.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2019-6.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2019-6.png"
+                }
             ]
         },
         {
@@ -43,9 +79,18 @@
                 "About that version I wanted to do something different, here I implemented a kind of portfolio / blog where I posted my opinions and advice on design, I started portfolio and implemented PHP for the first time, mostly to replicate the menu and the footer."
             ],
             "img":[
-                "2018-1.png",
-                "2018-2.png",
-                "2018-3.png"
+                {
+                    "original":"/IMG/myportfolioevolution/2018-1.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2018-1.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2018-2.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2018-2.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2018-3.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2018-3.png"
+                }
             ]
         },
         {
@@ -54,10 +99,22 @@
                 "About that version I used another design, in that moment I thinked it was cool and modern, but I was wrong jeje, but that's part of grow!."
             ],
             "img":[
-                "2017-1.png",
-                "2017-2.png",
-                "2017-3.png",
-                "2017-4.png"
+                {
+                    "original":"/IMG/myportfolioevolution/2017-1.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2017-1.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2017-2.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2017-2.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2017-3.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2017-3.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2017-4.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2017-4.png"
+                }
             ]
         },
         {
@@ -66,10 +123,22 @@
                 "This version of the portfolio is one of the oldest that I have had, I started this portfolio by implementing a free template and modifying it to show designs mostly oriented to show a basic profile of my person, my skills and my contact data (because I was starting ). In general, this portfolio was my initiation of the layout as such; I did not implement much, only HTML, CSS and BOOTSTRAP."
             ],
             "img":[
-                "2015-1.png",
-                "2015-2.png",
-                "2015-3.png",
-                "2015-4.png"
+                {
+                    "original":"/IMG/myportfolioevolution/2015-1.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2015-1.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2015-2.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2015-2.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2015-3.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2015-3.png"
+                },
+                {
+                    "original":"/IMG/myportfolioevolution/2015-4.png",
+                    "thumbnail":"/IMG/myportfolioevolution/2015-4.png"
+                }
             ]
         }
     ]

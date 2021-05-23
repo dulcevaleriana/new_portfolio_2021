@@ -5,6 +5,10 @@
 @import './safari.scss';
 @import './microsoftEdge.scss';
 
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /*Inicio*/
 *{
     font-family: 'Roboto';
@@ -365,18 +369,20 @@ hr {
 .class-Unicef > div:nth-child(3){
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-gap: 20px;
 }
 
 .class-GreenCard > div:nth-child(3) > div,
 .class-Unicef > div:nth-child(3) > div{
     display: grid;
     grid-template-rows: 33% 33% 33%;
-    grid-gap: 20px;
+    grid-template-columns: 100%;
+    grid-gap: 50px;
 }
 
 .class-GreenCard > div:nth-child(3) img,
 .class-Unicef > div:nth-child(3) img {
-    width: 104%;
+    width: 100%;
 }
 
 .class-GreenCard .class-GalleryScroll,
@@ -595,6 +601,7 @@ textarea {
     width: 100vw;
     padding: 0 8vw 10px;
     align-items: end;
+    margin-bottom: 20px;
 }
 
 .class-nextPage > div:first-child {
@@ -639,4 +646,40 @@ textarea {
 
 .class-disabled a{
     color: $color-DarkPupple !important;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+    width: 0;
+}
+
+.image-gallery-svg {
+    height: 40px !important;
+    width: 40px !important; 
+    position: absolute;
+    top: 20%;
+}
+
+.image-gallery-icon.image-gallery-right-nav > .image-gallery-svg {
+    position: absolute;
+    right: 0;
+}
+
+.image-gallery-icon.image-gallery-play-button {
+    display: none;
+}
+
+.image-gallery-icon.image-gallery-fullscreen-button {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.image-gallery-icon.image-gallery-fullscreen-button > .image-gallery-svg {
+    height: 20px !important;
+    width: 20px !important;
+    position: absolute;
+    top: 20%;
+    right: 20%;
 }

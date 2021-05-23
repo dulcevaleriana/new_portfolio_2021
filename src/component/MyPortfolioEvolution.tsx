@@ -1,13 +1,14 @@
 import JSONMyPortfolioEvolution from '../json/MyPortfolioEvolution.json';
 import Footer from '../component/Footer';
 import NextPage from '../component/NextPage';
-import GalleryScroll from '../component/GalleryScroll';
+import ImageGallery from 'react-image-gallery';
 
 import IMG4 from '../image/Image6.png';
 import IMG5 from '../image/Image5.png';
 import IMG6 from '../image/Image4.png';
 
 const MyPortfolioEvolution = (props:any) => {
+
     return(
         <div className="class-MyPortfolioEvolution">
             <NextPage
@@ -26,7 +27,7 @@ const MyPortfolioEvolution = (props:any) => {
                         {props.info.map((data,i) => <p key={i}>{data}</p>)}
                     </div>
                     <div>
-                        <GalleryScroll nameMap={props.img} folderName={"myportfolioevolution"}/>
+                        <ImageGallery items={props.img} />
                     </div>
                 </div>
             ))}
