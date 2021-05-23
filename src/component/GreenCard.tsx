@@ -16,6 +16,15 @@ const GreenCard = (props:any) => {
 
     return(
         <div className="class-GreenCard">
+            <NextPage
+                IMG_A={IMG1}
+                IMG_B={IMG2}
+                IMG_C={IMG3}
+                onClick={props.onClick}
+                linkGitHub="https://github.com/dulcevaleriana/green-card-web-app"
+                linkProyect="https://greencard.do/"
+                namePage="Unicef"
+            />
             <h2>About Green Card</h2>
             {JSONGreenCard.JSONGreenCard.map((props, i) => (
                 <>
@@ -34,13 +43,6 @@ const GreenCard = (props:any) => {
                 </div>
                 </>
             ))}
-            <NextPage
-                IMG_A={IMG1}
-                IMG_B={IMG2}
-                IMG_C={IMG3}
-                onClick={props.onClick}
-                namePage="Unicef >>"
-            />
             <Footer/>
         </div>
     )

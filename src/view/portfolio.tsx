@@ -4,7 +4,6 @@ import MyPortfolioEvolution from '../component/MyPortfolioEvolution';
 import GreenCard from '../component/GreenCard';
 import Unicef from '../component/Unicef';
 
-import MESA from '../image/mesa.svg';
 import IMG1 from '../image/Web1920–6.png';
 import IMG2 from '../image/Web1920–2.png';
 import IMG3 from '../image/Web1920–1.png';
@@ -14,7 +13,6 @@ import IMG6 from '../image/Image4.png';
 import IMG7 from '../image/Image3.png';
 import IMG8 from '../image/Image2.png';
 import IMG9 from '../image/Image1.png';
-import MINIME from '../image/mini_me.png';
 
 const Portfolio = (props:any) => {
     const [menuBase, setMenuBase] = useState(true);
@@ -121,50 +119,6 @@ const Portfolio = (props:any) => {
                 )}
 
             </div>
-            {menuBase ? (
-                <div>
-                    <div className="class-aperson-sit"/>
-                    <img src={MESA} alt="MESA"/>
-                </div>
-            ) :
-            (
-                <>
-                { viewPage1 &&
-                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
-                        <button>
-                            Ver en GitHub
-                        </button>
-                        <button>
-                            Ver projecto
-                        </button>
-                    </div>
-                }
-                { viewPage2 &&
-                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
-                        <button>
-                            Ver en GitHub
-                        </button>
-                        <button>
-                            Ver projecto
-                        </button>
-                    </div>
-                }
-                { viewPage3 &&
-                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
-                        <button>
-                            Ver en GitHub
-                        </button>
-                        <button>
-                            Ver projecto
-                        </button>
-                    </div>
-                }
-                <div className="class-fixed-img-minime">
-                    <img src={MINIME} alt="MINIME"/>
-                </div>
-                </>
-            )
-            }
         </div>
     )
 }

@@ -16,6 +16,15 @@ const Unicef = (props:any) => {
 
     return(
         <div className="class-Unicef">
+            <NextPage
+                IMG_A={IMG7}
+                IMG_B={IMG8}
+                IMG_C={IMG9}
+                onClick={props.onClick}
+                titleGitHub="Comming Soon"
+                tittleProject="Comming Soon"
+                namePage="My Portfolio Evolution"
+            />
             <h2>About Unicef</h2>
             {JSONUnicef.JSONUnicef.map((props, i) => (
                 <>
@@ -34,13 +43,6 @@ const Unicef = (props:any) => {
                 </div>
                 </>
             ))}
-            <NextPage
-                IMG_A={IMG7}
-                IMG_B={IMG8}
-                IMG_C={IMG9}
-                onClick={props.onClick}
-                namePage="My Portfolio Evolution >>"
-            />
             <Footer/>
         </div>
     )
