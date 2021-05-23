@@ -14,6 +14,10 @@ import IMG7 from '../image/Image3.png';
 import IMG8 from '../image/Image2.png';
 import IMG9 from '../image/Image1.png';
 
+import JSONMyPortfolioEvolution from '../json/MyPortfolioEvolution.json';
+import JSONGreenCard from '../json/GreenCard.json';
+import JSONUnicef from '../json/Unicef.json';
+
 const Portfolio = (props:any) => {
     const [menuBase, setMenuBase] = useState(true);
 
@@ -64,13 +68,25 @@ const Portfolio = (props:any) => {
                     )}
                     
                     {viewPage1 &&
+                    <>
                     <h2>My Portfolio Evolution</h2>
+                    <p>{JSONMyPortfolioEvolution.JSONMyPortfolioEvolution[0].info[0]}</p>
+                    <button onClick={() => setMenuBase(false)}>See More</button>
+                    </>
                     }
                     {viewPage2 &&
+                    <>
                     <h2>Green Card</h2>
+                    <p>{JSONGreenCard.JSONGreenCard[0].info[0]}</p>
+                    <button onClick={selectThis2}>See More</button>
+                    </>
                     }
                     {viewPage3 &&
+                    <>
                     <h2>Unicef</h2>
+                    <p>{JSONUnicef.JSONUnicef[0].info[0]}</p>
+                    <button onClick={selectThis3}>See More</button>
+                    </>
                     }
                 </div>
                 {menuBase ? (
