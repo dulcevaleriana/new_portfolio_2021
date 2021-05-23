@@ -8,7 +8,7 @@
 /*Inicio*/
 *{
     font-family: 'Roboto';
-    color: $color-pupple;
+    color: $color-DarkPupple;
     scrollbar-color: $color-white $color-pupple;
     scrollbar-width: thin;
     scroll-behavior: smooth;
@@ -158,7 +158,7 @@ body {
 .class-home > div:nth-child(2) strong {
     font-family: Signatria;
     font-size: 70pt;
-    color: $color-pupple;
+    color: $color-DarkPupple;
     font-weight: lighter;
 }
 
@@ -273,7 +273,7 @@ button {
 }
 
 .class-PortfolioDetails {
-    background: $color-orange;
+    background: $color-white;
     position: fixed;
     top: 23vh;
     left: 0;
@@ -362,14 +362,14 @@ button {
 .class-Footer > div:first-child > strong {
     font-family: Signatria;
     font-size: 40pt;
-    color: #2703a6;
+    color: $color-pupple;
     font-weight: lighter;
 }
 .class-portfolio > div:nth-child(2) > div:first-child p > strong , 
 .class-portfolio > div:nth-child(2) > div:first-child h2 > strong {
     font-family: Signatria;
     font-size: 30pt;
-    color: #2703a6;
+    color: $color-pupple;
     font-weight: lighter;
 }
 
@@ -385,7 +385,7 @@ button {
 
 hr {
     width: 100%;
-    border: 1px solid #2703a6;
+    border: 1px solid $color-pupple;
 }
 
 .class-Footer p {
@@ -506,7 +506,7 @@ hr {
 .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
     font-family: Signatria;
     font-size: 35pt;
-    color: #2703a6;
+    color: $color-pupple;
     font-weight: lighter;
 }
 
@@ -529,7 +529,7 @@ hr {
 .class-experienceDetail > div:first-child{
     width: 15px;
     height: 15px;
-    background: #2703a6;
+    background: $color-DarkPupple;
     border-radius: 1000px;
     margin: 12.2px 0;
 }
@@ -553,11 +553,11 @@ textarea {
     height: 50px;
     margin: 0;
     background: transparent;
-    border: 1px solid #2703a6;
+    border: 1px solid $color-pupple;
     font-weight: bolder;
     font-size: 12pt;
-    color: #2703a6;
-    border-bottom: 3px solid #2703a6;
+    color: $color-pupple;
+    border-bottom: 3px solid $color-pupple;
     border-radius: 10px 10px 0 0;
 }
 
@@ -609,4 +609,9 @@ textarea {
 
 .class-GalleryScroll img{
     width: 100%;
+}
+.class-menu ul li a:hover, 
+.class-Footer ul li a:hover,
+.class-menu ul li a.active {
+    color: $color-pupple !important;
 }
