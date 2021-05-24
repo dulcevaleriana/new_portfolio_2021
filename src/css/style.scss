@@ -134,6 +134,7 @@ body {
 .class-contact > div:nth-child(3){
     position: relative;
     height: 100%;
+    z-index: -1;
 }
 
 .class-home > div:nth-child(3) > img:first-child,
@@ -247,7 +248,7 @@ button a {
     display: grid;
     grid-template-columns: 100%;
     grid-gap: 20px;
-    grid-template-rows: 30vh 30vh 40px !important;
+    grid-template-rows: 30vh 30vh 40px;
 }
 
 .class-portfolio > div:nth-child(2) > div:nth-child(2) {
