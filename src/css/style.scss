@@ -761,11 +761,11 @@ div#google_translate_element {
 }
 
 .goog-te-gadget-simple {
-    background-color: #fff0;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    border-right: none;
+    background-color: #fff0 !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
     width: 150px;
     height: 40px;
     position: relative;
