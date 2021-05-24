@@ -3,6 +3,8 @@ import {NavLink} from "react-router-dom";
 import useMediaQuery from "../js/jsMediaQuery";
 
 import LOGO from '../image/icon-logo.svg';
+import LOGO_MENU from '../image/logo-menu.svg';
+import LOGO_X from '../image/logo-x.svg';
 
 const Menu = (props:any) => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -18,9 +20,9 @@ const Menu = (props:any) => {
             ):(
                 <>
                 {!openMenu ? (
-                    <img src={LOGO} alt="LOGO" onClick={() => setOpenMenu(true)}/>
+                    <img src={LOGO_MENU} alt="LOGO" onClick={() => setOpenMenu(true)}/>
                 ):(
-                    <img src={LOGO} alt="LOGO" onClick={() => setOpenMenu(false)}/>
+                    <img src={LOGO_X} alt="LOGO" onClick={() => setOpenMenu(false)}/>
                 )}
                 </>
             )}
