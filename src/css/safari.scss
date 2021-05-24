@@ -36,14 +36,12 @@
             left: 6.3vw !important;
             z-index: 0 !important;
         }
-        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong ,
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong font{
             font-size: 40pt !important;
         }
         p{
             font-size: 13pt !important;
-        }
-        .class-PortfolioDetails {
-            top: 27vh !important;
         }
     }
     /*MAC Web Resolución Mediana*/
@@ -59,7 +57,8 @@
         .class-aboutUs > div:nth-child(2) > div:first-child > div{
             top: 200px !important;
         }
-        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong ,
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong font{
             font-size: 30pt !important;
         }
         p{
@@ -67,9 +66,6 @@
         }
         .class-aboutUs > div:nth-child(2) > div:last-child{
             height: calc(100vh - (52.55px + 10vh)) !important;
-        }
-        .class-PortfolioDetails {
-            top: 29vh !important;
         }
     }
     /*MAC Web Resolución Pequeña*/
@@ -102,7 +98,8 @@
         .class-aboutUs > div:nth-child(2) > div:first-child > div {
             top: 250px !important;
         }
-        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong ,
+        .class-aboutUs > div:nth-child(2) > div:first-child > div > strong font{
             font-size: 50pt !important;
         }
         .class-aboutUs > div:nth-child(2) > div:first-child,
@@ -142,9 +139,6 @@
     }
     /*Standar Size*/ 
     @media only screen and (max-width: 1024px) and (max-height: 768px){
-        .class-PortfolioDetails {
-            top: 29vh !important;
-        }
         .class-aboutUs > div:nth-child(2) > div:last-child {
             height: calc(100vh - 52px - 8vh) !important;
         }
@@ -165,9 +159,6 @@
         }
         .class-button-dropdown{
             margin: 5px !important;
-        }
-        .class-PortfolioDetails {
-            top: 35vh !important;
         }
         .class-aboutUs > div:nth-child(2) > div:last-child{
             height:fit-content !important;
