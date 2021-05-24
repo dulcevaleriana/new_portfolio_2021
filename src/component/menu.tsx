@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 import useMediaQuery from "../js/jsMediaQuery";
+import GoogleEasyTranslate from './googleEasyTranslate';
 
 import LOGO from '../image/icon-logo.svg';
 import LOGO_MENU from '../image/logo-menu.svg';
@@ -28,6 +29,9 @@ const Menu = (props:any) => {
             )}
             {(isPageAvaible || openMenu) &&
                 <ul className={isPageAvaible ? "" : "class-menuSmartphone"}>
+                    <li>
+                        <GoogleEasyTranslate/>
+                    </li>
                     {menuList.map((list:any,i:any) =>
                     <li key={i} onClick={() => setOpenMenu(false)}>
                         <NavLink to={list.link} activeClassName="active">{list.name}</NavLink>
