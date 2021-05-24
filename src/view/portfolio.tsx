@@ -18,6 +18,8 @@ import JSONMyPortfolioEvolution from '../json/MyPortfolioEvolution.json';
 import JSONGreenCard from '../json/GreenCard.json';
 import JSONUnicef from '../json/Unicef.json';
 
+import MESA from '../image/mesa.svg';
+
 const Portfolio = (props:any) => {
     const [menuBase, setMenuBase] = useState(true);
 
@@ -147,6 +149,12 @@ const Portfolio = (props:any) => {
                 )}
 
             </div>
+            {menuBase &&
+            <div>
+                <div className="class-aperson-sit"/>
+                <img src={MESA} alt="MESA"/>
+            </div>
+            }
         </div>
     )
 }

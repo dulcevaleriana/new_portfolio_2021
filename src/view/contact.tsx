@@ -7,7 +7,7 @@ const contact = (props:any) => {
             <div></div>
             <div>
                 <p>Contact</p>
-                <h2>Connect whit me !</h2>
+                <h2>Connect with me !</h2>
                 <input type="text" id="fname" name="fname" placeholder="Name"/>
                 <input type="email" id="femail" name="femail" placeholder="Email"/>
                 <input type="text" id="fsubject" name="fsubject" placeholder="Subject"/>
