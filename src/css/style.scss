@@ -18,6 +18,11 @@
     scroll-behavior: smooth;
 }
 
+font{
+    font-family: 'Roboto';
+    color: $color-DarkPupple;
+}
+
 ::placeholder {
     color: $color-pupple;
     opacity: 1; /* Firefox */
@@ -162,11 +167,13 @@ body {
     -webkit-box-reflect: $reflect-5;
 }
 
-.class-home > div:nth-child(2) strong {
+.class-home > div:nth-child(2) strong,
+.class-home > div:nth-child(2) strong font {
     font-family: Signatria;
     font-size: 70pt;
     color: $color-DarkPupple;
     font-weight: lighter;
+    text-transform: capitalize !important;
 }
 
 .class-home > div:nth-child(2) h1 {
@@ -209,8 +216,8 @@ button a {
     font-weight: bold;
 }
 
-.class-menu ul li:nth-child(2),
-.class-Footer ul li:nth-child(2) {
+.class-menu ul li:first-child,
+.class-Footer ul li:first-child {
     display: none;
 }
 
@@ -352,18 +359,23 @@ button a {
     width: 100%;
 }
 
-.class-Footer > div:first-child > strong {
+.class-Footer > div:first-child > strong,
+.class-Footer > div:first-child > strong font {
     font-family: Signatria;
     font-size: 40pt;
     color: $color-pupple;
     font-weight: lighter;
+    text-transform: capitalize !important;
 }
 .class-portfolio > div:nth-child(2) > div:first-child p > strong , 
-.class-portfolio > div:nth-child(2) > div:first-child h2 > strong {
+.class-portfolio > div:nth-child(2) > div:first-child h2 > strong,
+.class-portfolio > div:nth-child(2) > div:first-child p > strong font, 
+.class-portfolio > div:nth-child(2) > div:first-child h2 > strong font {
     font-family: Signatria;
     font-size: 30pt;
     color: $color-pupple;
     font-weight: lighter;
+    text-transform: capitalize !important;
 }
 
 .class-Footer ul {
@@ -498,7 +510,8 @@ hr {
     text-align: center;
 }
 
-.class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+.class-aboutUs > div:nth-child(2) > div:first-child > div > strong,
+.class-aboutUs > div:nth-child(2) > div:first-child > div > strong font {
     font-family: Signatria;
     font-size: 35pt;
     color: $color-pupple;
@@ -729,9 +742,13 @@ iframe#\:2\.container {
 
 div#google_translate_element {
     height: 40px;
-    background: transparent;
+    background: $color-yellow;
     border: 2px solid #2703a6;
-    width: 240px;
+    width: 150px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99999;
 }
 
 .goog-te-gadget {
@@ -748,7 +765,7 @@ div#google_translate_element {
     border-top: none;
     border-bottom: none;
     border-right: none;
-    width: 240px;
+    width: 150px;
     height: 40px;
     position: relative;
 }
