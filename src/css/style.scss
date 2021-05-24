@@ -313,7 +313,7 @@ button a {
 .class-PortfolioDetails {
     background: $color-white;
     position: fixed;
-    top: 23vh;
+    top: 26vh;
     left: 0;
     right: 0;
     bottom: 0;
@@ -744,7 +744,6 @@ iframe#\:2\.container {
 div#google_translate_element {
     height: 40px;
     background: $color-yellow;
-    border: 2px solid #2703a6;
     width: 150px;
     position: fixed;
     bottom: 10px;
@@ -782,6 +781,8 @@ img.goog-te-gadget-icon {
     left: 0;
     top: 0;
     bottom: 0;
+    background: #f2b705;
+    border: 3px solid #2703a6;
 }
 
 .goog-te-gadget-simple .goog-te-menu-value {
