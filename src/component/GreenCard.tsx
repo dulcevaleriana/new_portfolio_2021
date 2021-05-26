@@ -28,8 +28,8 @@ const GreenCard = (props:any) => {
                     </div>
                     <div>
                     <ImageGallery items={props.img} />
-                    <img key={i} src={props.img[0].original} alt="IMG1"/>
-                    <img key={i} src={props.img[1].original} alt="IMG1"/>
+                    <img key={i} src={props.img[0].original} alt="IMG1" loading="lazy"/>
+                    <img key={i} src={props.img[1].original} alt="IMG1" loading="lazy"/>
                     </div>
                 </div>
             ))}

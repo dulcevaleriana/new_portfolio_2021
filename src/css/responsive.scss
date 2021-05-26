@@ -121,9 +121,6 @@
         width: 487px;
         background-size: cover;
     }
-    body {
-        background: linear-gradient(to bottom, #f29304 80%, #fbca01 100%) !important;
-    }
     .class-home{
         grid-template-columns: calc(100vw - 16vw) !important;
         grid-template-rows: 35% 55% !important;
@@ -230,7 +227,7 @@
         display: none;
     }
     ul.class-menuSmartphone {
-        background: linear-gradient(to top, #f29304a3 10%, #f2b705 90%) !important;
+        background: $gradient-pupple-menu !important;
         position: fixed;
         left: 0;
         right: 0;
@@ -252,7 +249,7 @@
         display: block !important;
     }
     .class-aboutUs > div:first-child {
-        background: #f2b705 !important;
+        background: $color-yellow !important;
         top: 0 !important;
         bottom: 50vh !important;
     }
@@ -394,7 +391,7 @@
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img {
         width: 100% !important;
         position: relative !important;
-        box-shadow: 2px 2px 20px 2px #2703a621;
+        box-shadow: $shadow-effect;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0 !important;
@@ -492,13 +489,13 @@
     .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
         z-index: -3 !important;
     }
-    .class-contact > div:nth-child(2) > input:nth-child(4),
-    .class-contact > div:nth-child(2) > h2, 
-    .class-contact > div:nth-child(2) > textarea, 
-    .class-contact > div:nth-child(2) > input:nth-child(5) {
+    .class-contact > form:nth-child(2) > input:nth-child(4),
+    .class-contact > form:nth-child(2) > h2, 
+    .class-contact > form:nth-child(2) > textarea, 
+    .class-contact > form:nth-child(2) > input:nth-child(5) {
         grid-column: 1 !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         grid-template-rows: 20px 30px 55px 55px 55px 150px !important;
     }
     .class-Footer > div:first-child > strong ,
@@ -539,7 +536,7 @@
         bottom: -95px !important;
     }
     ul.class-menuSmartphone {
-        background: linear-gradient(to top, #f29304f0 10%, #f2b705 90%) !important;
+        background: $gradient-pupple-menu !important;
         top: 14vh !important;
         height: 80vh !important;
     }
@@ -587,7 +584,7 @@
     .class-Footer ul li a {
         font-size: 12pt !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         overflow-y: auto;
         width: 84vw;
         height: 80.8vh;
@@ -828,7 +825,7 @@
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img {
         width: 100% !important;
         position: relative !important;
-        box-shadow: 2px 2px 20px 2px #2703a621;
+        box-shadow: $shadow-effect;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0 !important;
@@ -926,13 +923,13 @@
     .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
         z-index: -3 !important;
     }
-    .class-contact > div:nth-child(2) > input:nth-child(4),
-    .class-contact > div:nth-child(2) > h2, 
-    .class-contact > div:nth-child(2) > textarea, 
-    .class-contact > div:nth-child(2) > input:nth-child(5) {
+    .class-contact > form:nth-child(2) > input:nth-child(4),
+    .class-contact > form:nth-child(2) > h2, 
+    .class-contact > form:nth-child(2) > textarea, 
+    .class-contact > form:nth-child(2) > input:nth-child(5) {
         grid-column: 1 !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         grid-template-rows: 20px 30px 55px 55px 55px 150px !important;
     }
     .class-Footer > div:first-child > strong ,
@@ -1015,7 +1012,7 @@
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img {
         width: 100% !important;
         position: relative !important;
-        box-shadow: 2px 2px 20px 2px #2703a621;
+        box-shadow: $shadow-effect;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0 !important;
@@ -1115,13 +1112,13 @@
     .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
         z-index: -3 !important;
     }
-    .class-contact > div:nth-child(2) > input:nth-child(4),
-    .class-contact > div:nth-child(2) > h2, 
-    .class-contact > div:nth-child(2) > textarea, 
-    .class-contact > div:nth-child(2) > input:nth-child(5) {
+    .class-contact > form:nth-child(2) > input:nth-child(4),
+    .class-contact > form:nth-child(2) > h2, 
+    .class-contact > form:nth-child(2) > textarea, 
+    .class-contact > form:nth-child(2) > input:nth-child(5) {
         grid-column: 1 !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         grid-template-rows: 20px 30px 55px 55px 55px 150px !important;
     }
     .class-Footer > div:first-child > strong 
@@ -1172,7 +1169,7 @@
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img {
         width: 100% !important;
         position: relative !important;
-        box-shadow: 2px 2px 20px 2px #2703a621;
+        box-shadow: $shadow-effect;
     }
     .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2) {
         left: 0 !important;
@@ -1271,13 +1268,13 @@
     .class-aboutUs > div:nth-child(3) > img:nth-child(2) {
         z-index: -3 !important;
     }
-    .class-contact > div:nth-child(2) > input:nth-child(4),
-    .class-contact > div:nth-child(2) > h2, 
-    .class-contact > div:nth-child(2) > textarea, 
-    .class-contact > div:nth-child(2) > input:nth-child(5) {
+    .class-contact > form:nth-child(2) > input:nth-child(4),
+    .class-contact > form:nth-child(2) > h2, 
+    .class-contact > form:nth-child(2) > textarea, 
+    .class-contact > form:nth-child(2) > input:nth-child(5) {
         grid-column: 1 !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         grid-template-rows: 20px 30px 55px 55px 55px 150px !important;
     }
     .class-Footer > div:first-child > strong ,
@@ -1300,7 +1297,7 @@
     .class-home > div:nth-child(2) h1 {
         font-size: 30pt !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         height: calc(100vh - 52px - 27vh - 20px);
         margin-top: 20px;
         width: calc(100vw - 16vw);
@@ -1431,7 +1428,7 @@
     .class-home > div:nth-child(2) h1 {
         font-size: 30pt !important;
     }
-    .class-contact > div:nth-child(2) {
+    .class-contact > form:nth-child(2) {
         height: calc(100vh - 52px - 27vh - 20px);
         margin-top: 20px;
         width: calc(100vw - 16vw);

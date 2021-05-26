@@ -15,7 +15,7 @@ import Portfolio from './view/portfolio';
 import AboutMe from './view/aboutMe';
 import Contact from './view/contact';
 
-import GoogleEasyTranslate from './component/googleEasyTranslate';
+// import GoogleEasyTranslate from './component/googleEasyTranslate';
 
 // import Animate from './component/animate';
 const menuList = [
@@ -52,7 +52,7 @@ function App() {
     <Router>
       <>
       <Menu menuList={menuList}/>
-      <GoogleEasyTranslate/>
+      {/* <GoogleEasyTranslate/> */}
         <Switch>
           {menuList.map((list:any,i:any) =>
             <Route key={i} exact path={list.link}>
