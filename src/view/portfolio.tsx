@@ -4,7 +4,6 @@ import MyPortfolioEvolution from '../component/MyPortfolioEvolution';
 import GreenCard from '../component/GreenCard';
 import Unicef from '../component/Unicef';
 
-import MESA from '../image/mesa.svg';
 import IMG1 from '../image/Web1920–6.png';
 import IMG2 from '../image/Web1920–2.png';
 import IMG3 from '../image/Web1920–1.png';
@@ -14,7 +13,12 @@ import IMG6 from '../image/Image4.png';
 import IMG7 from '../image/Image3.png';
 import IMG8 from '../image/Image2.png';
 import IMG9 from '../image/Image1.png';
-import MINIME from '../image/mini_me.png';
+
+import JSONMyPortfolioEvolution from '../json/MyPortfolioEvolution.json';
+import JSONGreenCard from '../json/GreenCard.json';
+import JSONUnicef from '../json/Unicef.json';
+
+import MESA from '../image/mesa.svg';
 
 const Portfolio = (props:any) => {
     const [menuBase, setMenuBase] = useState(true);
@@ -66,13 +70,37 @@ const Portfolio = (props:any) => {
                     )}
                     
                     {viewPage1 &&
+                    <>
                     <h2>My Portfolio Evolution</h2>
+                    {menuBase &&
+                        <>
+                        <p>{JSONMyPortfolioEvolution.JSONMyPortfolioEvolution[0].info[0]}</p>
+                        <button onClick={() => setMenuBase(false)}>See More</button>
+                        </>
+                    }
+                    </>
                     }
                     {viewPage2 &&
+                    <>
                     <h2>Green Card</h2>
+                    {menuBase &&
+                        <>
+                        <p>{JSONGreenCard.JSONGreenCard[0].info[0]}</p>
+                        <button onClick={() => setMenuBase(false)}>See More</button>
+                        </>
+                    }
+                    </>
                     }
                     {viewPage3 &&
+                    <>
                     <h2>Unicef</h2>
+                    {menuBase &&
+                        <>
+                        <p>{JSONUnicef.JSONUnicef[0].info[0]}</p>
+                        <button onClick={() => setMenuBase(false)}>See More</button>
+                        </>
+                    }
+                    </>
                     }
                 </div>
                 {menuBase ? (
@@ -121,49 +149,11 @@ const Portfolio = (props:any) => {
                 )}
 
             </div>
-            {menuBase ? (
-                <div>
-                    <div className="class-aperson-sit"/>
-                    <img src={MESA} alt="MESA"/>
-                </div>
-            ) :
-            (
-                <>
-                { viewPage1 &&
-                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
-                        <button>
-                            Ver en GitHub
-                        </button>
-                        <button>
-                            Ver projecto
-                        </button>
-                    </div>
-                }
-                { viewPage2 &&
-                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
-                        <button>
-                            Ver en GitHub
-                        </button>
-                        <button>
-                            Ver projecto
-                        </button>
-                    </div>
-                }
-                { viewPage3 &&
-                    <div className={`${!menuBase ? "class-flex-button-portfolio-detail":" "}`}>
-                        <button>
-                            Ver en GitHub
-                        </button>
-                        <button>
-                            Ver projecto
-                        </button>
-                    </div>
-                }
-                <div className="class-fixed-img-minime">
-                    <img src={MINIME} alt="MINIME"/>
-                </div>
-                </>
-            )
+            {menuBase &&
+            <div>
+                <div className="class-aperson-sit"/>
+                <img src={MESA} alt="MESA"/>
+            </div>
             }
         </div>
     )

@@ -15,7 +15,7 @@ import Portfolio from './view/portfolio';
 import AboutMe from './view/aboutMe';
 import Contact from './view/contact';
 
-import './image/unicef/1.png';
+// import GoogleEasyTranslate from './component/googleEasyTranslate';
 
 // import Animate from './component/animate';
 const menuList = [
@@ -47,10 +47,12 @@ const menuList = [
   // }
 ];
 function App() {
+
   return (
     <Router>
       <>
       <Menu menuList={menuList}/>
+      {/* <GoogleEasyTranslate/> */}
         <Switch>
           {menuList.map((list:any,i:any) =>
             <Route key={i} exact path={list.link}>

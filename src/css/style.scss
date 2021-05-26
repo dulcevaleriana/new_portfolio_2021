@@ -5,13 +5,22 @@
 @import './safari.scss';
 @import './microsoftEdge.scss';
 
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 /*Inicio*/
 *{
     font-family: 'Roboto';
-    color: $color-pupple;
+    color: $color-DarkPupple;
     scrollbar-color: $color-white $color-pupple;
     scrollbar-width: thin;
     scroll-behavior: smooth;
+}
+
+font{
+    font-family: 'Roboto';
+    color: $color-DarkPupple;
 }
 
 ::placeholder {
@@ -52,6 +61,7 @@ body {
     background: $gradient-yellow;
     overflow: hidden;
     height: 100vh;
+    top: 0 !important;
 }
 
 .class-menu {
@@ -74,6 +84,8 @@ body {
     gap: 20px;
     padding: 0;
     width: 100%;
+    height: 40px;
+    align-items: center;
 }
 
 .class-menu ul li,
@@ -122,6 +134,7 @@ body {
 .class-contact > div:nth-child(3){
     position: relative;
     height: 100%;
+    z-index: -1;
 }
 
 .class-home > div:nth-child(3) > img:first-child,
@@ -155,17 +168,20 @@ body {
     -webkit-box-reflect: $reflect-5;
 }
 
-.class-home > div:nth-child(2) strong {
+.class-home > div:nth-child(2) strong,
+.class-home > div:nth-child(2) strong font {
     font-family: Signatria;
     font-size: 70pt;
-    color: $color-pupple;
+    color: $color-DarkPupple;
     font-weight: lighter;
+    text-transform: capitalize !important;
 }
 
 .class-home > div:nth-child(2) h1 {
     font-size: 50pt;
     line-height: 0.5em;
     -webkit-box-reflect: $reflect-6;
+    font-weight: lighter;
 }
 
 .class-home > div:nth-child(2) h2{
@@ -180,6 +196,17 @@ button {
     border: 2px solid $color-pupple;
     font-weight: bolder;
     font-size: 12pt;
+    color: $color-pupple;
+}
+button:hover{
+    border: 2px solid $color-lightPupple !important;
+    color: $color-lightPupple !important;
+    transition: 1s;
+}
+
+button a {
+    text-decoration: none;
+    color: $color-pupple;
 }
 
 .class-home > div:nth-child(2) button{
@@ -219,14 +246,15 @@ button {
 .class-portfolio > div:nth-child(2){
     width: 100%;
     display: grid;
-    grid-template-columns: 50px calc(100% - 70px);
+    grid-template-columns: 100%;
     grid-gap: 20px;
-    grid-template-rows: 70px auto;
+    grid-template-rows: 30vh 30vh 40px;
 }
 
-.class-portfolio > div:nth-child(2) > div:first-child{
-    display: grid;
-    grid-area: 1 / span 3;
+.class-portfolio > div:nth-child(2) > div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
 
 .class-button-dropdown{
@@ -237,9 +265,18 @@ button {
     margin: 12.2px 0;
 }
 
-.class-portfolio > div:nth-child(2) > div:first-child p,
 .class-portfolio > div:nth-child(2) > div:first-child h2{
     line-height: 0;
+}
+
+.class-portfolio > div:nth-child(2) > div:first-child p{
+    line-height: 1;
+    font-size: 12pt !important;
+    height: auto;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .class-portfolio > div:nth-child(2) > div:nth-child(2) > div.active{
@@ -248,7 +285,8 @@ button {
 
 .class-portfolio > div:nth-child(2) > div:nth-child(3){
     position: relative;
-    height: 60vh;
+    display: grid;
+    grid-row: 2;
 }
 
 .class-portfolio > div:nth-child(2) > div:nth-child(3) > img{
@@ -264,39 +302,28 @@ button {
 
 .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(2){
     left: 10%;
-    top: 20%;
+    top: 0;
 }
 
 .class-portfolio > div:nth-child(2) > div:nth-child(3) > img:nth-child(3){
-    bottom: 0;
+    top: 0;
     right: 0;
 }
 
 .class-PortfolioDetails {
-    background: $color-orange;
+    background: $color-white;
     position: fixed;
-    top: 23vh;
+    top: 26vh;
     left: 0;
     right: 0;
     bottom: 0;
     overflow-y: auto;
-    padding: 20px 8vw;
+    padding: 0px 8vw;
     box-shadow: $shadow-inner;
     overflow-x: hidden;
 }
 
-.class-flex-button-portfolio-detail{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
-    height: 50px !important;
-}
-
-.class-flex-button-portfolio-detail button{
-    margin: 10px 0 !important;
-}
-
-.class-MyPortfolioEvolution > div {
+.class-MyPortfolioEvolution > div:not(:first-of-type) {
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     grid-gap: 20px;
@@ -310,34 +337,8 @@ button {
 
 .class-GalleryScroll{
     display: flex !important;
-    width: 103%;
+    width: 100%;
     overflow-x: auto;
-}
-
-.class-nextPage {
-    position: relative;
-    background: $color-yellow;
-    align-items: center;
-    margin-bottom: 20px;
-    grid-template-columns: calc(60% - 10px) calc(40% - 10px) !important;
-    margin-left: -8vw;
-    margin-right: -8vw;
-    display: grid;
-    grid-gap: 20px;
-    margin-top: 100px;
-}
-
-.class-nextPage > div:first-child{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    width: 50%;
-}
-
-.class-nextPage > div:first-child img{
-    width: auto;
-    height: 200px;
-    top: 50px;
-    position: relative;
 }
 
 .class-Footer {
@@ -359,18 +360,23 @@ button {
     width: 100%;
 }
 
-.class-Footer > div:first-child > strong {
+.class-Footer > div:first-child > strong,
+.class-Footer > div:first-child > strong font {
     font-family: Signatria;
     font-size: 40pt;
-    color: #2703a6;
+    color: $color-pupple;
     font-weight: lighter;
+    text-transform: capitalize !important;
 }
 .class-portfolio > div:nth-child(2) > div:first-child p > strong , 
-.class-portfolio > div:nth-child(2) > div:first-child h2 > strong {
+.class-portfolio > div:nth-child(2) > div:first-child h2 > strong,
+.class-portfolio > div:nth-child(2) > div:first-child p > strong font, 
+.class-portfolio > div:nth-child(2) > div:first-child h2 > strong font {
     font-family: Signatria;
     font-size: 30pt;
-    color: #2703a6;
+    color: $color-pupple;
     font-weight: lighter;
+    text-transform: capitalize !important;
 }
 
 .class-Footer ul {
@@ -385,29 +391,31 @@ button {
 
 hr {
     width: 100%;
-    border: 1px solid #2703a6;
+    border: 1px solid $color-pupple;
 }
 
 .class-Footer p {
     margin: 0;
 }
 
-.class-GreenCard > div:nth-child(2),
-.class-Unicef > div:nth-child(2){
+.class-GreenCard > div:nth-child(3),
+.class-Unicef > div:nth-child(3){
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
-}
-
-.class-GreenCard > div:nth-child(2) > div,
-.class-Unicef > div:nth-child(2) > div{
-    display: grid;
-    grid-template-rows: 33% 33% 33%;
     grid-gap: 20px;
 }
 
-.class-GreenCard > div:nth-child(2) img,
-.class-Unicef > div:nth-child(2) img {
-    width: 104%;
+.class-GreenCard > div:nth-child(3) > div,
+.class-Unicef > div:nth-child(3) > div{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-columns: 100%;
+    grid-gap: 50px;
+}
+
+.class-GreenCard > div:nth-child(3) img,
+.class-Unicef > div:nth-child(3) img {
+    width: 100%;
 }
 
 .class-GreenCard .class-GalleryScroll,
@@ -464,9 +472,9 @@ hr {
 }
 
 .class-aboutUs > div:nth-child(2) > div:last-child {
-    background: #f2f0d5cf;
+    background: $color-pupple-white-transparent;
     padding: 10px;
-    border: 2px solid #f39405;
+    border: 2px solid $color-orange;
     display: grid;
     grid-template-columns: calc(50% - 10px) calc(50% - 10px);
     grid-gap: 20px;
@@ -476,7 +484,7 @@ hr {
 
 .class-aboutUs > div:nth-child(2) > div:first-child{
     padding: 10px;
-    border: 2px solid #f39405;
+    border: 2px solid $color-orange;
     position: relative;
     width: initial;
     height: inherit;
@@ -493,7 +501,7 @@ hr {
     border-radius: 50%;
     width: 180px;
     height: 180px;
-    box-shadow: 0px 0px 0px 2000px #f2f0d5cf;
+    box-shadow: 0px 0px 0px 2000px $color-pupple-white-transparent;
     z-index: -1;
 }
 
@@ -503,10 +511,11 @@ hr {
     text-align: center;
 }
 
-.class-aboutUs > div:nth-child(2) > div:first-child > div > strong {
+.class-aboutUs > div:nth-child(2) > div:first-child > div > strong,
+.class-aboutUs > div:nth-child(2) > div:first-child > div > strong font {
     font-family: Signatria;
     font-size: 35pt;
-    color: #2703a6;
+    color: $color-pupple;
     font-weight: lighter;
 }
 
@@ -529,7 +538,7 @@ hr {
 .class-experienceDetail > div:first-child{
     width: 15px;
     height: 15px;
-    background: #2703a6;
+    background: $color-DarkPupple;
     border-radius: 1000px;
     margin: 12.2px 0;
 }
@@ -553,11 +562,11 @@ textarea {
     height: 50px;
     margin: 0;
     background: transparent;
-    border: 1px solid #2703a6;
+    border: 1px solid $color-pupple;
     font-weight: bolder;
     font-size: 12pt;
-    color: #2703a6;
-    border-bottom: 3px solid #2703a6;
+    color: $color-pupple;
+    border-bottom: 3px solid $color-pupple;
     border-radius: 10px 10px 0 0;
 }
 
@@ -570,26 +579,26 @@ textarea {
     height: 70%;
 }
 
-.class-contact > div:nth-child(2){
+.class-contact > form:nth-child(2){
     display: grid;
     grid-template-columns: auto;
     grid-gap: 20px;
     grid-template-rows: 20px 30px 55px 55px 150px 55px;
 }
 
-.class-contact > div:nth-child(2) > p,
-.class-contact > div:nth-child(2) > h2,
-.class-contact > div:nth-child(2) button{
+.class-contact > form:nth-child(2) > p,
+.class-contact > form:nth-child(2) > h2,
+.class-contact > form:nth-child(2) button{
     margin: 0 !important;
 }
 
-.class-contact > div:nth-child(2) > h2,
-.class-contact > div:nth-child(2) > textarea,
-.class-contact > div:nth-child(2) > input:nth-child(5){
+.class-contact > form:nth-child(2) > h2,
+.class-contact > form:nth-child(2) > textarea,
+.class-contact > form:nth-child(2) > input:nth-child(5){
     grid-column: 1 / span 2;
 }
 
-.class-contact > div:nth-child(2) > input:nth-child(4){
+.class-contact > form:nth-child(2) > input:nth-child(4){
     grid-column: 2;
 }
 
@@ -605,4 +614,201 @@ textarea {
 
 .class-fixed-img-minime img {
     width: 100%;
+}
+
+.class-GalleryScroll img{
+    width: 100%;
+}
+.class-menu ul li a:hover, 
+.class-Footer ul li a:hover,
+.class-menu ul li a.active {
+    color: $color-pupple !important;
+}
+
+.class-nextPage{
+    display: grid;
+    grid-template-columns: 60% 15% 15%;
+    position: relative;
+    height: 100px;
+    background: $color-yellow;
+    left: -8vw;
+    width: 100vw;
+    padding: 0 8vw 10px;
+    align-items: end;
+    margin-bottom: 20px;
+}
+
+.class-nextPage > div:first-child {
+    position: absolute;
+    background: $color-orange;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 30%;
+}
+
+.class-nextPage > div:nth-child(2),
+.class-nextPage > div:nth-child(3),
+.class-nextPage > div:nth-child(4){
+    z-index: 9;
+}
+
+.class-nextPage > div:nth-child(4){
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    max-height: 100px;
+    z-index: 9;
+}
+
+.class-nextPage > div:nth-child(4) > img{
+    height: 100px;
+    width: auto;
+}
+
+.class-nextPage > div:nth-child(2) > button{
+    margin: 0 20px 0 0 !important;
+}
+
+.class-nextPage > div:nth-child(3) > button{
+    margin: 0 !important;
+}
+
+.class-disabled {
+    //pointer-events: none;
+    border-color: $color-DarkPupple !important;
+}
+
+.class-disabled a{
+    color: $color-DarkPupple !important;
+}
+
+.image-gallery-left-nav,
+.image-gallery-right-nav {
+    width: 0;
+}
+
+.image-gallery-svg {
+    height: 40px !important;
+    width: 40px !important; 
+    position: absolute;
+    top: 20%;
+}
+
+.image-gallery-icon.image-gallery-right-nav > .image-gallery-svg {
+    position: absolute;
+    right: 0;
+}
+
+.image-gallery-icon.image-gallery-play-button {
+    display: none;
+}
+
+.image-gallery-icon.image-gallery-fullscreen-button {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.image-gallery-icon.image-gallery-fullscreen-button > .image-gallery-svg {
+    height: 20px !important;
+    width: 20px !important;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+}
+
+.class-MyPortfolioEvolution,
+.class-GreenCard,
+.class-Unicef {
+    width: 100%;
+}
+
+.image-gallery button:hover{
+    border:none !important;
+}
+
+.fullscreen polyline,
+.fullscreen path {
+    color: white;
+}
+
+iframe#\:2\.container {
+    display: none;
+    position: unset;
+    height: 0 !important;
+    z-index: -2;
+    width: 0 !important;
+}
+
+div#google_translate_element {
+    height: 40px;
+    background: $color-yellow;
+    width: 150px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99999;
+}
+
+.goog-te-gadget {
+    font-family: 'Roboto';
+    font-size: 11px;
+    color: $color-pupple;
+    white-space: nowrap;
+    height: 50px;
+}
+
+.goog-te-gadget-simple {
+    background-color: #fff0 !important;
+    border-left: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+    width: 150px;
+    height: 40px;
+    position: relative;
+}
+
+img.goog-te-gadget-icon {
+    height: 40px;
+    display: none;
+}
+
+.goog-te-gadget-simple > span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: $color-yellow;
+    border: 3px solid $color-pupple;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+    color: $color-pupple;
+    margin-top: 0;
+    padding-left: 10px;
+    height: 40px;
+    margin-left: 0;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value img {
+    height: 50px;
+    width: 0;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value > span:nth-child(3){
+    display: none;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value > span:last-child{
+    color: $color-pupple !important;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 10px);
+}
+
+div#goog-gt-tt {
+    display: none !important;
 }

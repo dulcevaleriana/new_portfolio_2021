@@ -22,14 +22,30 @@ $reflect-5: below -76px linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0,
 $reflect-6: below 380px linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
 
 /*color*/
-$color-yellow : #f2b705;
+$color-yellow : #eee9ff;
+$color-lightPupple : #f6f4ff;
 $color-pupple : #2703a6;
+$color-DarkPupple : #140059;
+$color-white: #eee9ff;
+$color-orange: #B9A5FF;
+$color-pupple-white-transparent: #eee9ff9c;
+/*
+$color-yellow : #f2b705;
+$color-lightPupple : #7300df;
+$color-pupple : #2703a6;
+$color-DarkPupple : #140059;
 $color-white: #F2F0D5;
 $color-orange: #F29305;
+*/
 
 /*gradient*/
+$gradient-yellow : linear-gradient(to bottom, #cbbcff 50%, #EEE9FF 100%);
+$gradient-invert : linear-gradient(to top, #cbbcff 50%, #EEE9FF 100%);
+$gradient-pupple-menu: linear-gradient(to top, #9d94bfb0 10%, #eee9ff 90%);
+/*
 $gradient-yellow : linear-gradient(to bottom, #f29304 50%, #fbca01 100%);
 $gradient-invert : linear-gradient(to bottom, #f27d04 50%, #fbca01 100%);
+*/
 
 /*shadow*/
 $shadow-effect :2px 2px 20px 2px #2703a621;
@@ -43,5 +59,5 @@ $shadow-inner: 0px 20px 50px 1px #892ba617 inset;
 
 @font-face {
     font-family: 'Roboto';
-    src: local('Roboto'), url(../fonts/Roboto-Thin.ttf) format('woff');
+    src: local('Roboto'), url(../fonts/Roboto-Regular.ttf) format('woff');
 }
