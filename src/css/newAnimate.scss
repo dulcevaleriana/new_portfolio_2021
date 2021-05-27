@@ -75,8 +75,8 @@ body {
     animation: animate-class-person-up 0.9s steps(10) reverse;
     animation-fill-mode: backwards;
     animation-delay: 5.5s;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    // animation-fill-mode: forwards;
+    // -webkit-animation-fill-mode: forwards;
     visibility: hidden;
     opacity: 0;
 }
@@ -87,9 +87,14 @@ body {
         visibility: inherit;
         opacity: 1;
     }
-    100%{
+    99%{
         background-position: 3127px;
         visibility: inherit;
+        opacity: 1;
+    }
+    100%{
+        background-position: 3127px;
+        visibility: hidden;
         opacity: 1;
     }
 }
@@ -108,6 +113,68 @@ img[alt="MESA"]{
         opacity: 1;
     }
     100%{
+        visibility: inherit;
+        opacity: 1;
+    }
+}
+
+.class-base-2 {
+    position: absolute;
+    right: 0.4vw;
+    bottom: 228px;
+    animation: animate-class-base-2 0.4s;
+    animation-delay: 6.4s ;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes animate-class-base-2{
+    from{
+        right: 0vw;
+        opacity: 1;
+    }
+    to{
+        right: 7vw;
+        opacity: 1;
+        visibility: hidden;
+    }
+}
+
+.class-animacion-8{
+    animation: animate-animacion-8 0.4s steps(4) reverse infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes animate-animacion-8 {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 695px;
+    }
+}
+
+.class-animacion-9{
+    animation: animate-animacion-9 0.4s steps(6) reverse infinite;
+    animation-fill-mode: backwards;
+    animation-delay: 6.8s ;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@keyframes animate-animacion-9 {
+    0%{
+        background-position: 0px;
+        visibility: inherit;
+        opacity: 1;
+    }
+    100%{
+        background-position: 1045px;
         visibility: inherit;
         opacity: 1;
     }

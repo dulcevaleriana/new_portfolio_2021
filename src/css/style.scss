@@ -166,8 +166,9 @@ body {
     bottom: 245px;
     width: 30%;
     max-width: 150px;
-    right: 146px;
+    right: 84px;
     -webkit-box-reflect: $reflect-5;
+    z-index: -2;
 }
 
 .class-home > div:nth-child(2) strong,
