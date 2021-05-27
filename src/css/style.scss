@@ -163,10 +163,10 @@ body {
 
 .class-home > div:nth-child(3) > img:nth-child(3){
     position: absolute;
-    bottom: 150px;
+    bottom: 230px;
     width: 30%;
     max-width: 150px;
-    right: 0px;
+    right: 146px;
     -webkit-box-reflect: $reflect-5;
 }
 
@@ -229,10 +229,10 @@ button a {
     background-position: 275px !important;
 }
 
-.class-person-up{
-    -webkit-box-reflect: below -39px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
-    background-position: 0 !important;
-}
+// .class-person-up{
+//     -webkit-box-reflect: below -39px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+//     background-position: 0 !important;
+// }
 
 .class-person-up,
 .class-aperson-sit{
@@ -240,9 +240,10 @@ button a {
     width: 285.3px;
     background: $image_animation_5;
     position: absolute;
-    bottom: -350px;
-    right: 0;
+    bottom: 230px;
+    right: 0vw;
     z-index: -1;
+    background-position: 284.27px;
 }
 
 .class-portfolio > div:nth-child(2){
