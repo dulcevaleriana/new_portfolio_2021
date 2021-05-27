@@ -11,8 +11,7 @@
     }
 } 
 
-.class-animacion-2,
-.class-animacion-3{
+.class-animacion-2{
     animation: animate-animacion-2 0.8s steps(8) infinite reverse;
 }
 
@@ -24,6 +23,7 @@
         background-position: 918px;
     }
 }
+
 
 .class-animacion-4{
     animation: animate-animacion-4 0.8s steps(8) infinite ;

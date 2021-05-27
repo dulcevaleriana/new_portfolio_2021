@@ -9,6 +9,8 @@
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
+@import "./newAnimate.scss";
+
 /*Inicio*/
 *{
     font-family: 'Roboto';
@@ -238,7 +240,7 @@ button a {
     width: 285.3px;
     background: $image_animation_5;
     position: absolute;
-    bottom: 230px;
+    bottom: -350px;
     right: 0;
     z-index: -1;
 }

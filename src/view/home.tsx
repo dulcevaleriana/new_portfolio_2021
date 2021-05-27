@@ -16,7 +16,10 @@ const home = (props:any) => {
                 </Link>
             </div>
             <div>
+                <span className="class-base">
+                <div className="class-animacion-3"/>
                 <div className="class-person-up"/>
+                </span>
                 <img src={MESA} alt="MESA"/>
             </div>
         </div>
