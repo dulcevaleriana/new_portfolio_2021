@@ -94,6 +94,25 @@ body {
     }
 }
 
+img[alt="MESA"]{
+    animation: animate-class-mesa 0.3s steps(10);
+    animation-delay: 5.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    visibility: hidden;
+    opacity: 0;
+}
+@keyframes animate-class-mesa{
+    0%{
+        visibility: inherit;
+        opacity: 1;
+    }
+    100%{
+        visibility: inherit;
+        opacity: 1;
+    }
+}
+
 // .class-menu {
 //     animation: animate-class-menu 2s;
 // }
